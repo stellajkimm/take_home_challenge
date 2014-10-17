@@ -16,10 +16,9 @@ class Team(models.Model):
     name = models.CharField(max_length=200)
 
 class Athlete(models.Model):
+    team = models.ForeignKey(Team)
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
-    sport = models.CharField(max_length=200)
-    league = models.CharField(max_length=200)
-    team = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
-    picture = models.URLField()
+    position = models.CharField(max_length=200)
+    status = models.CharField(max_length=200)
+    number = models.IntegerField(default=0)
