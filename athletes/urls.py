@@ -18,6 +18,7 @@ urlpatterns = patterns('athletes.views',
     # url(r'^(?P<pk>\d+)/results/$', views.ResultsView.as_view(), name='results'),
     # url(r'^(?P<question_id>\d+)/vote/$', views.vote, name='vote'),
 
+    url (r'^sports/(?P<sport_id>[0-9]+)/league/(?P<league_id>[0-9]+)/$', views.league_detail, name='league_detail'),
     url (r'^sports/(?P<sport_id>[0-9]+)/$', views.sport_detail, name='sport_detail'),
 
 )

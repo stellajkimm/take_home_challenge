@@ -12,5 +12,15 @@ def index(request):
 def sport_detail(request, sport_id):
 	sport = get_object_or_404(Sport, pk=sport_id)
 	sports = Sport.objects.all()
+	leagues = sport.league_set.all()
 	athletes = Athlete.objects.all().filter(team__division__league__sport=sport)
-	return render(request, 'athletes/sport_detail.html', {'sport': sport, 'sports': sports, 'athletes': athletes})
+	return render(request, 'athletes/sport_detail.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues})
+
+def league_detail(request, sport_id, league_id):
+	sport = get_object_or_404(Sport, pk=sport_id)
+	league = get_object_or_404(League, pk=league_id)
+	sports = Sport.objects.all()
+	leagues = sport.league_set.all()
+	divisions = league.division_set.all()
+	athletes = Athlete.objects.all().filter(team__division__league=league)
+	return render(request, 'athletes/sport_detail.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions})
