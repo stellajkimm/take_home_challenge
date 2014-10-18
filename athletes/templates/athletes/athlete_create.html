@@ -1,0 +1,18 @@
+<h3>ADD ATHLETE</h3>
+<br>
+	<%= form_for @new_bucket do |f| %>
+	  <%= f.text_field :name, placeholder: "name", size: 49 %>
+	 <div class="btn-group" data-toggle="buttons">
+	  <label class="btn btn-primary">
+	    <input type="radio" name="bucket[privacy]" id="bucket_public" value="public"> Public
+	  </label>
+	  <label class="btn btn-primary">
+	    <input type="radio" name="bucket[privacy]" id="bucket_private" value="private"> Private
+	  </label>
+	</div>
+	  <%= f.fields_for :hashtags do |h| %>
+    	<%= h.text_field :tag, placeholder: "hashtags (ex. #hash #hash two #hash three)", size: 65 %>
+  	<% end %><br><br>
+	  <%= f.submit "CREATE NEW BUCKET", class: "btn btn-default" %>
+	<% end %>
+<br><br>
