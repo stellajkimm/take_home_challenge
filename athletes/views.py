@@ -35,3 +35,15 @@ def division_list(request, sport_id, league_id, division_id):
 	teams = division.team_set.all()
 	athletes = Athlete.objects.all().filter(team__division=division)
 	return render(request, 'athletes/sport_list.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams})
+
+def team_list(request, sport_id, league_id, division_id, team_id):
+	sport = get_object_or_404(Sport, pk=sport_id)
+	league = get_object_or_404(League, pk=league_id)
+	division = get_object_or_404(Division, pk=division_id)
+	team = get_object_or_404(Team, pk=team_id)
+	sports = Sport.objects.all()
+	leagues = sport.league_set.all()
+	divisions = league.division_set.all()
+	teams = division.team_set.all()
+	athletes = Athlete.objects.all().filter(team=team)
+	return render(request, 'athletes/sport_list.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams, 'team': team})
