@@ -21,7 +21,7 @@ class Division(models.Model):
         return self.name
 
     def sport(self):
-        return self.division.league.sport
+        return self.league.sport
 
 class Team(models.Model):
     division = models.ForeignKey(Division)

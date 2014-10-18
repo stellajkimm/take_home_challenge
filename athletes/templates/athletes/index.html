@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% block content %}
 
 	<ul>
@@ -7,4 +8,21 @@
 		{% endfor %}
 	</ul>
 	
+	<table>
+		<tr>
+			<td>Number</td>
+			<td>Name</td>
+			<td>Position</td>
+			<td>Team</td>
+		</tr>
+	{% for athlete in athletes %}
+		<tr>
+			<td>{{ athlete.number }}</td>
+			<td>{{ athlete }}</td>
+			<td>{{ athlete.position }}</td>
+			<td>{{ athlete.team }}</td>
+	{% endfor %}
+		</tr>
+			
+
 {% endblock content %}
