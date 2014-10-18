@@ -13,6 +13,8 @@
 			<td>League</td>
 			<td>Division</td>
 			<td>Team</td>
+			<td>Edit</td>
+			<td>Delete</td>
 		</tr>
 	{% for athlete in athletes %}
 		<tr>
@@ -23,6 +25,8 @@
 			<td>{{ athlete.team.division.league }}</td>
 			<td>{{ athlete.team.division }}</td>
 			<td>{{ athlete.team }}</td>
+			<td>x</td>
+			<td>x</td>
 	{% endfor %}
 		</tr>
 			
