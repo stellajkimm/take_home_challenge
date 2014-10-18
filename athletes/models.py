@@ -20,12 +20,21 @@ class Division(models.Model):
     def __str__(self):
         return self.name
 
+    def sport(self):
+        return self.division.league.sport
+
 class Team(models.Model):
     division = models.ForeignKey(Division)
     name = models.CharField(max_length=200)
 
     def __str__(self):
         return self.name
+
+    def league(self):
+        return self.division.league
+
+    def sport(self):
+        return self.division.league.sport
 
 class Athlete(models.Model):
     team = models.ForeignKey(Team)
