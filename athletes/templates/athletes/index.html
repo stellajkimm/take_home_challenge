@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
+{% block content %}
 
-<head>
-  <title>Athletes</title>
-</head>
-
-<body>
 	<ul>
 		{% for sport in sports %}
 			<li>{{ sport.name }}</li>
 		{% endfor %}
 	</ul>
-</body>
-
-</html>
+	
+{% endblock content %}
