@@ -27,8 +27,9 @@
 			<td>{{ athlete.team }}</td>
 			<td>x</td>
 			<td><a href="{% url 'athlete_delete' athlete.id %}">x</a></td>
-	{% endfor %}
 		</tr>
-			
+	{% endfor %}
+	</table>
+	
 
 {% endblock content %}
