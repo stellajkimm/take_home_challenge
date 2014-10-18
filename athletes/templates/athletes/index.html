@@ -2,11 +2,8 @@
 
 {% block content %}
 
-	<ul>
-		{% for sport in sports %}
-			<li>{{ sport.name }}</li>
-		{% endfor %}
-	</ul>
+	{% include "athletes/sport_nav.html" %}
+
 	
 	<table>
 		<tr>
