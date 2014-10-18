@@ -1,6 +1,5 @@
 html, body {
     /* give this to all tags from html to .fullscreen */
-    height:100%;
     margin: 0px;
 }
 
@@ -23,7 +22,6 @@ body {
     border-left: 25px solid #404040;
     border-right: 25px solid #404040;  
     padding: 25px;
-    font-family: $font1;
 	font-size: 16px;
     /*background-color: #5B5950;*/
 }
