@@ -1,0 +1,74 @@
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ALL ATHLETES</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          {% if sport %}{{ sport.name.upper }}{% else %}SPORT {% endif %}<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            {% for sport in sports %}
+              <li><a href="{% url 'sport_list' sport.id %}">{{ sport }}</a></li>
+            {% endfor %}
+            <li class="divider"></li>
+            <li><a href="#">Add Sport</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          {% if league %}{{ league.name.upper }}{% else %}LEAGUE {% endif %}<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            {% for league in leagues %}
+              <li><a href="{% url 'league_list' sport.id league.id %}">{{ league }}</a></li>
+            {% endfor %}
+            <li class="divider"></li>
+            <li><a href="#">Add League</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          {% if division %}{{ division.name.upper }}{% else %}DIVISION {% endif %}<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            {% for division in divisions %}
+              <li><a href="{% url 'division_list' sport.id league.id division.id %}">{{ division }}</a></li>
+            {% endfor %}
+            <li class="divider"></li>
+            <li><a href="#">Add Division</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          {% if team %}{{ team.name.upper }}{% else %}TEAM {% endif %}<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            {% for team in teams %}
+              <li><a href="{% url 'team_list' sport.id league.id division.id team.id %}">{{ team }}</a></li>
+            {% endfor %}
+            <li class="divider"></li>
+            <li><a href="#">Add Team</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><form class="navbar-form navbar-nav" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" size="50">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form></li>
+        <li><a href="#" data-toggle="modal" data-target="#athlete_create">+</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
