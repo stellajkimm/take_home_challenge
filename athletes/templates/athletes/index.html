@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Athletes</title>
+</head>
+
+<body>
+	<ul>
+		{% for sport in sports %}
+			<li>{{ sport.name }}</li>
+		{% endfor %}
+	</ul>
+</body>
+
+</html>
