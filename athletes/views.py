@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, redirect
 from django.core.urlresolvers import reverse
 from django.views import generic
 
@@ -48,9 +48,20 @@ def team_list(request, sport_id, league_id, division_id, team_id):
 	athletes = Athlete.objects.all().filter(team=team)
 	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams, 'team': team})
 
-# def athlete_delete(request, pk, template_name='servers/server_confirm_delete.html'):
-#     server = get_object_or_404(Server, pk=pk)    
-#     if request.method=='POST':
-#         server.delete()
-#         return redirect('server_list')
-#     return render(request, template_name, {'object':server})
+def athlete_delete(request, athlete_id):
+	template_name='athletes/athlete_confirm_delete.html'
+	athlete = get_object_or_404(Athlete, pk=athlete_id)
+	if request.method=='POST':
+			athlete.delete()
+			return redirect('index')
+	return render(request, template_name, {'athlete':athlete})
+
+
+
+
+
+
+
+
+
+
