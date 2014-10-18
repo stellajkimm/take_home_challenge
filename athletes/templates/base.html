@@ -4,12 +4,19 @@
 <head>
   <title>Athletes</title>
   <link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}css/master.css'>
+  {# Load the tag library #}
+	{% load bootstrap3 %}
+
+	{# Load CSS and JavaScript #}
+	{% bootstrap_css %}
+	{% bootstrap_javascript %}
 </head>
 
 <body>
 	<header>
 		<h1>ATHLETES-R-US</h1>
 	</header>
+	{% include "athletes/_nav.html" %}
 	{% block content %}
 	{% endblock content %}
 </body>
