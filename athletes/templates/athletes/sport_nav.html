@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">All Athletes</a>
+      <a class="navbar-brand" href="/">ALL ATHLETES</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -17,7 +17,7 @@
       <ul class="nav navbar-nav">
         <li class="dropdown">
           <a href="" class="dropdown-toggle" data-toggle="dropdown">
-          {% if sport %}{{ sport }}{% else %}Sport {% endif %}<span class="caret"></span></a>
+          {% if sport %}{{ sport.name.upper }}{% else %}SPORT {% endif %}<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             {% for sport in sports %}
               <li><a href="{% url 'sport_list' sport.id %}">{{ sport }}</a></li>
@@ -28,7 +28,7 @@
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          {% if league %}{{ league }}{% else %}League {% endif %}<span class="caret"></span></a>
+          {% if league %}{{ league.name.upper }}{% else %}LEAGUE {% endif %}<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             {% for league in leagues %}
               <li><a href="{% url 'league_list' sport.id league.id %}">{{ league }}</a></li>
@@ -39,7 +39,7 @@
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          {% if division %}{{ division }}{% else %}Division {% endif %}<span class="caret"></span></a>
+          {% if division %}{{ division.name.upper }}{% else %}DIVISION {% endif %}<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             {% for division in divisions %}
               <li><a href="{% url 'division_list' sport.id league.id division.id %}">{{ division }}</a></li>
@@ -50,7 +50,7 @@
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          {% if team %}{{ team }}{% else %}Team {% endif %}<span class="caret"></span></a>
+          {% if team %}{{ team.name.upper }}{% else %}TEAM {% endif %}<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             {% for team in teams %}
               <li><a href="{% url 'team_list' sport.id league.id division.id team.id %}">{{ team }}</a></li>

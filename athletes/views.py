@@ -14,7 +14,7 @@ def sport_list(request, sport_id):
 	sports = Sport.objects.all()
 	leagues = sport.league_set.all()
 	athletes = Athlete.objects.all().filter(team__division__league__sport=sport)
-	return render(request, 'athletes/sport_list.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues})
+	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues})
 
 def league_list(request, sport_id, league_id):
 	sport = get_object_or_404(Sport, pk=sport_id)
@@ -23,7 +23,7 @@ def league_list(request, sport_id, league_id):
 	leagues = sport.league_set.all()
 	divisions = league.division_set.all()
 	athletes = Athlete.objects.all().filter(team__division__league=league)
-	return render(request, 'athletes/sport_list.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions})
+	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions})
 
 def division_list(request, sport_id, league_id, division_id):
 	sport = get_object_or_404(Sport, pk=sport_id)
@@ -34,7 +34,7 @@ def division_list(request, sport_id, league_id, division_id):
 	divisions = league.division_set.all()
 	teams = division.team_set.all()
 	athletes = Athlete.objects.all().filter(team__division=division)
-	return render(request, 'athletes/sport_list.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams})
+	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams})
 
 def team_list(request, sport_id, league_id, division_id, team_id):
 	sport = get_object_or_404(Sport, pk=sport_id)
@@ -46,4 +46,4 @@ def team_list(request, sport_id, league_id, division_id, team_id):
 	divisions = league.division_set.all()
 	teams = division.team_set.all()
 	athletes = Athlete.objects.all().filter(team=team)
-	return render(request, 'athletes/sport_list.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams, 'team': team})
+	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams, 'team': team})
