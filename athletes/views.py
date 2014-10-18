@@ -8,3 +8,8 @@ def index(request):
 	sports = Sport.objects.all()
 	athletes = Athlete.objects.all()
 	return render(request, 'athletes/index.html', {'sports': sports, 'athletes': athletes})
+
+def sport_detail(request, sport_id):
+	sports = Sport.objects.all()
+	athletes = Athlete.objects.all()
+	return render(request, 'athletes/sport_detail.html', {'sports': sports, 'athletes': athletes})
