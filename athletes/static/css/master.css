@@ -1,0 +1,29 @@
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+    margin: 0px;
+}
+
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: #404040;
+    left: 0;
+    right: 0;
+    height: 25px;
+    z-index: 100;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+body {
+    border-left: 25px solid #404040;
+    border-right: 25px solid #404040;  
+    padding: 25px;
+    font-family: $font1;
+	font-size: 16px;
+    /*background-color: #5B5950;*/
+}
