@@ -16,10 +16,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="" class="dropdown-toggle" data-toggle="dropdown">Sport <span class="caret"></span></a>
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          {% if sport %}{{ sport }}{% else %}Sport{% endif %}<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             {% for sport in sports %}
-              <li><a href="#">{{ sport.name }}</a></li>
+              <li><a href="{% url 'sport_detail' sport.id %}">{{ sport.name }}</a></li>
             {% endfor %}
             <li class="divider"></li>
             <li><a href="#">Add Sport</a></li>

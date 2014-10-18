@@ -1,1 +1,25 @@
-sport_detail.html
+{% extends "base.html" %}
+
+{% block content %}
+
+	{% include "athletes/sport_nav.html" %}
+
+	
+	<table>
+		<tr>
+			<td>Number</td>
+			<td>Name</td>
+			<td>Position</td>
+			<td>Team</td>
+		</tr>
+	{% for athlete in athletes %}
+		<tr>
+			<td>{{ athlete.number }}</td>
+			<td>{{ athlete }}</td>
+			<td>{{ athlete.position }}</td>
+			<td>{{ athlete.team }}</td>
+	{% endfor %}
+		</tr>
+			
+
+{% endblock content %}
