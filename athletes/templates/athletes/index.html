@@ -16,6 +16,7 @@
 			<td>Edit</td>
 			<td>Delete</td>
 		</tr>
+		<tbody class="searchable">
 	{% for athlete in athletes %}
 		<tr>
 			<td>{{ athlete.number }}</td>
@@ -29,6 +30,7 @@
 			<td><a href="#" data-toggle="modal" data-target="#athlete_delete_{{ athlete.id }}">x</a></td>
 		</tr>
 	{% endfor %}
+		</tbody>
 	</table>
 
 {% include "athletes/_modals.html" %}
