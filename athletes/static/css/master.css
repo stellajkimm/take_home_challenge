@@ -63,6 +63,7 @@ ul.errorlist {
 
 input#filter {
     background-color: #464646;
+    color: white;
 }
 
 a.link {
