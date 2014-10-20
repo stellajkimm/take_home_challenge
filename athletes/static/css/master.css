@@ -1,5 +1,4 @@
 html, body {
-     give this to all tags from html to .fullscreen 
     margin: 0px;
 }
 
@@ -43,12 +42,9 @@ ul.errorlist {
     display:none;
 }
 
-.container {
-    width: 80%;
-}
-
 .filler {
-
+    height: 500px;
+    text-align: center;
 }
 
 .table_form tbody tr {
