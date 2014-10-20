@@ -77,6 +77,17 @@ a.link {
     font-family: 'Graduate';
 }
 
+.modal-content {
+    background-color: #223522;
+    font-size: 0.9em;
+}
+
+.modal-header {
+  min-height: 16.42857143px;
+  padding: 15px;
+  border-bottom: 1px solid #464646;
+}
+
 .sel {
     color: #FFFFFF !important;
     font-size: 1.4em;
