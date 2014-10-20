@@ -8,9 +8,10 @@ from athletes.models import Sport, League, Division, Team, Athlete
 def index(request):
 	sports = Sport.objects.order_by('name')
 	athletes = Athlete.objects.order_by('last_name')
-	create_athlete_form = AthleteForm(request.POST)
-	create_athlete_form.fields['team'] = forms.ModelChoiceField(Team.objects.order_by('name'))
-	return render(request, 'athletes/index.html', {'sports': sports, 'athletes': athletes, 'create_athlete_form': create_athlete_form})
+	teams = Team.objects.order_by('name')
+	athlete_form = AthleteForm(request.POST)
+	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
+	return render(request, 'athletes/index.html', {'sports': sports, 'athletes': athletes, 'teams': teams, 'athlete_form': athlete_form})
 
 def sport_list(request, sport_id):
 	sport = get_object_or_404(Sport, pk=sport_id)
@@ -18,9 +19,9 @@ def sport_list(request, sport_id):
 	leagues = sport.league_set.order_by('name')
 	teams = Team.objects.order_by('name')
 	athletes = Athlete.objects.filter(team__division__league__sport=sport).order_by('last_name')
-	create_athlete_form = AthleteForm(request.POST)
-	create_athlete_form.fields['team'] = forms.ModelChoiceField(teams)
-	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'create_athlete_form': create_athlete_form})
+	athlete_form = AthleteForm(request.POST)
+	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
+	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'teams': teams, 'athlete_form': athlete_form})
 
 def league_list(request, sport_id, league_id):
 	sport = get_object_or_404(Sport, pk=sport_id)
@@ -30,9 +31,9 @@ def league_list(request, sport_id, league_id):
 	divisions = league.division_set.order_by('name')
 	teams = Team.objects.filter(division__league=league).order_by('name')
 	athletes = Athlete.objects.filter(team__division__league=league).order_by('last_name')
-	create_athlete_form = AthleteForm(request.POST)
-	create_athlete_form.fields['team'] = forms.ModelChoiceField(teams)
-	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'create_athlete_form': create_athlete_form})
+	athlete_form = AthleteForm(request.POST)
+	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
+	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'teams': teams, 'athlete_form': athlete_form})
 
 def division_list(request, sport_id, league_id, division_id):
 	sport = get_object_or_404(Sport, pk=sport_id)
@@ -43,9 +44,9 @@ def division_list(request, sport_id, league_id, division_id):
 	divisions = league.division_set.order_by('name')
 	teams = division.team_set.order_by('name')
 	athletes = Athlete.objects.filter(team__division=division).order_by('last_name')
-	create_athlete_form = AthleteForm(request.POST)
-	create_athlete_form.fields['team'] = forms.ModelChoiceField(teams)
-	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams, 'create_athlete_form': create_athlete_form})
+	athlete_form = AthleteForm(request.POST)
+	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
+	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams, 'athlete_form': athlete_form})
 
 def team_list(request, sport_id, league_id, division_id, team_id):
 	sport = get_object_or_404(Sport, pk=sport_id)
@@ -57,14 +58,14 @@ def team_list(request, sport_id, league_id, division_id, team_id):
 	divisions = league.division_set.order_by('name')
 	teams = division.team_set.order_by('name')
 	athletes = Athlete.objects.filter(team=team).order_by('last_name')
-	create_athlete_form = AthleteForm(request.POST)
-	create_athlete_form.fields['team'] = forms.ModelChoiceField(teams)
-	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams, 'team': team, 'create_athlete_form': create_athlete_form})
+	athlete_form = AthleteForm(request.POST)
+	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
+	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams, 'team': team, 'athlete_form': athlete_form})
 
 def athlete_create(request):
-	create_athlete_form = AthleteForm(request.POST)
-	if create_athlete_form.is_valid():
-		create_athlete_form.save()
+	athlete_form = AthleteForm(request.POST)
+	if athlete_form.is_valid():
+		athlete_form.save()
 		return redirect('index')
 	return render(request, 'athletes/index.html')
 

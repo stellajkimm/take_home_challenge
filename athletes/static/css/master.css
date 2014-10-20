@@ -26,6 +26,9 @@ body {
     /*background-color: #5B5950;*/
 }
 
+form table {
+    text-align: left;
+}
 h1 {
     text-align: center;
 }
