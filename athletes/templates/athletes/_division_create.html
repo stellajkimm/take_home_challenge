@@ -1,0 +1,21 @@
+<form action="{% url 'division_create' %}" method="post">
+    {% csrf_token %}
+    <table class="table_form">
+    	<tr>
+	    	<td><label>Division:</label></td>
+    		<td><input type="text" name="name"></td>
+  		</tr>
+    	<tr>
+	    	<td><label>League:</label></td>
+    		<td><select id="id_league" name="league">
+    			{% for l in leagues %}
+    				<option value="{{ l.id }}" {% if l == league %}selected="selected"{% endif %}>{{ l }}</option>
+    			{% endfor %}
+				</select></td>
+  		</tr>
+
+    </table>
+    <br>
+    <button data-dismiss="modal" class="btn btn-default">Cancel</button>
+    <input type="submit" value="Submit" class="btn btn-default" />
+</form>

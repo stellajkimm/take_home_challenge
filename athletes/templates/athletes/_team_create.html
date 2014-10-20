@@ -1,0 +1,21 @@
+<form action="{% url 'team_create' %}" method="post">
+    {% csrf_token %}
+    <table class="table_form">
+    	<tr>
+	    	<td><label>Team:</label></td>
+    		<td><input type="text" name="name"></td>
+  		</tr>
+    	<tr>
+	    	<td><label>Division:</label></td>
+    		<td><select id="id_division" name="division">
+    			{% for d in divisions %}
+    				<option value="{{ d.id }}" {% if d == division %}selected="selected"{% endif %}>{{ d }}</option>
+    			{% endfor %}
+				</select></td>
+  		</tr>
+
+    </table>
+    <br>
+    <button data-dismiss="modal" class="btn btn-default">Cancel</button>
+    <input type="submit" value="Submit" class="btn btn-default" />
+</form>

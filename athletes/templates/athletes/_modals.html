@@ -2,17 +2,130 @@
 <!-- **************** MODALS **************** -->
 <!-- **************************************** -->
 
-<!-- create -->
-<div class="modal fade" id="#athlete_create" tabindex="-1" role="dialog" aria-labelledby="athlete_create" aria-hidden="true">
-  <div class="modal-dialog">
+<!-- create athlete -->
+
+<div class="modal fade" id="athlete_create" tabindex="-1" role="dialog" aria-labelledby="athlete_create" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="create"> </h4>
+        <h4 class="modal-title" id="athlete_create">ADD ATHLETE </h4>
       </div>
       <div class="modal-body">
 
-        {% include "athletes/athlete_create.html" %}
+        {% include "athletes/_athlete_create.html" %}
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+{% for athlete in athletes %}
+
+<!-- edit athlete -->
+
+<div class="modal fade" id="athlete_edit_{{ athlete.id }}" tabindex="-1" role="dialog" aria-labelledby="athlete_edit_{{ athlete.id }}" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="athlete_edit_{{ athlete.id }}">EDIT ATHLETE </h4>
+      </div>
+      <div class="modal-body">
+
+        {% include "athletes/_athlete_edit.html" %}
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- delete athlete -->
+
+<div class="modal fade" id="athlete_delete_{{ athlete.id }}" tabindex="-1" role="dialog" aria-labelledby="athlete_delete_{{ athlete.id }}" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="athlete_delete_{{ athlete.id }}">DELETE ATHLETE </h4>
+      </div>
+      <div class="modal-body">
+
+        {% include "athletes/_athlete_confirm_delete.html" %}
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+
+<!-- create sport -->
+
+<div class="modal fade" id="sport_create" tabindex="-1" role="dialog" aria-labelledby="sport_create" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="sport_create">ADD SPORT </h4>
+      </div>
+      <div class="modal-body">
+
+        {% include "athletes/_sport_create.html" %}
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- create league -->
+
+<div class="modal fade" id="league_create" tabindex="-1" role="dialog" aria-labelledby="league_create" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="league_create">ADD LEAGUE </h4>
+      </div>
+      <div class="modal-body">
+
+        {% include "athletes/_league_create.html" %}
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- create division -->
+
+<div class="modal fade" id="division_create" tabindex="-1" role="dialog" aria-labelledby="division_create" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="division_create">ADD DIVISION </h4>
+      </div>
+      <div class="modal-body">
+
+        {% include "athletes/_division_create.html" %}
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- create team -->
+
+<div class="modal fade" id="team_create" tabindex="-1" role="dialog" aria-labelledby="team_create" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="team_create">ADD TEAM </h4>
+      </div>
+      <div class="modal-body">
+
+        {% include "athletes/_team_create.html" %}
         
       </div>
     </div>

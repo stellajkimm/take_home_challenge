@@ -4,33 +4,42 @@
 
 	{% include "athletes/_nav.html" %}
 	
-	<table>
-		<tr>
-			<td>Number</td>
-			<td>Name</td>
-			<td>Position</td>
-			<td>Sport</td>
-			<td>League</td>
-			<td>Division</td>
-			<td>Team</td>
-			<td>Edit</td>
-			<td>Delete</td>
-		</tr>
-	{% for athlete in athletes %}
-		<tr>
-			<td>{{ athlete.number }}</td>
-			<td>{{ athlete }}</td>
-			<td>{{ athlete.position }}</td>
-			<td>{{ athlete.team.division.league.sport }}</td>
-			<td>{{ athlete.team.division.league }}</td>
-			<td>{{ athlete.team.division }}</td>
-			<td>{{ athlete.team }}</td>
-			<td>x</td>
-			<td><a href="{% url 'athlete_delete' athlete.id %}">x</a></td>
-		</tr>
-	{% endfor %}
+	{% if athletes.count > 0 %}
+		<table class="table_athletes">
+			<tr>
+				<th>Number</th>
+				<th>Name</th>
+				<th>Position</th>
+				<th>Sport</th>
+				<th>League</th>
+				<th>Division</th>
+				<th>Team</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+			<tbody class="searchable">
+		{% for athlete in athletes %}
+			<tr>
+				<td>{{ athlete.number }}</td>
+				<td>{{ athlete }}</td>
+				<td>{{ athlete.position }}</td>
+				<td>{{ athlete.team.division.league.sport }}</td>
+				<td>{{ athlete.team.division.league }}</td>
+				<td>{{ athlete.team.division }}</td>
+				<td>{{ athlete.team }}</td>
+				<td><a href="#" data-toggle="modal" data-target="#athlete_edit_{{ athlete.id }}">x</a></td>
+				<td><a href="#" data-toggle="modal" data-target="#athlete_delete_{{ athlete.id }}">x</a></td>
+			</tr>
+		{% endfor %}
+			</tbody>
+	{% else %}
+		<div class="filler">
+			No athletes available.
+		</div>
+	{% endif %}
+
 	</table>
 
-	{% include "athletes/_modals.html" %}
+{% include "athletes/_modals.html" %}
 
 {% endblock content %}

@@ -1,0 +1,6 @@
+<form action="{% url 'athlete_delete' athlete.id %}" method="post">{% csrf_token %}
+    <p>Are you sure you want to delete "{{ athlete }}"?
+    </p>
+    <button data-dismiss="modal" class="btn btn-default">Cancel</button>
+    <input type="submit" value="Delete" class="btn btn-default" />
+</form>
