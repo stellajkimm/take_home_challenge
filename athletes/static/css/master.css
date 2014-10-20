@@ -1,5 +1,5 @@
 html, body {
-    /* give this to all tags from html to .fullscreen */
+     give this to all tags from html to .fullscreen 
     margin: 0px;
 }
 
@@ -35,10 +35,15 @@ table {
     text-align: center;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even).not(.table_form) {
     background-color: #e7e7e7;
 }
 
 .container {
     width: 80%;
 }
+
+.table_form tbody tr {
+    height: 30px;
+}
+ul.errorlist {display:none;}
