@@ -13,6 +13,7 @@ urlpatterns = patterns('athletes.views',
 
     url (r'^athletes/delete/(?P<athlete_id>\d+)/$', views.athlete_delete, name='athlete_delete'),
     url (r'^athletes/create/$', views.athlete_create, name='athlete_create'),
+    url (r'^athletes/edit/(?P<athlete_id>\d+)/$', views.athlete_edit, name='athlete_edit'),
 
 
 )

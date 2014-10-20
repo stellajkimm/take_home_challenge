@@ -1,8 +1,9 @@
-<form action="{% url 'athlete_create' %}" method="post">
+<form action="{% url 'athlete_edit' athlete.id %}" method="post">
     {% csrf_token %}
     <table class="table_form">
 	    {{ create_athlete_form.as_table }}
     </table>
     <br>
+    <button data-dismiss="modal" class="btn btn-default">Cancel</button>
     <input type="submit" value="Submit" class="btn btn-default" />
 </form>

@@ -64,15 +64,23 @@ def team_list(request, sport_id, league_id, division_id, team_id):
 def athlete_create(request):
 	create_athlete_form = AthleteForm(request.POST)
 	if create_athlete_form.is_valid():
-			create_athlete_form.save()
-			return redirect('index')
+		create_athlete_form.save()
+		return redirect('index')
 	return render(request, 'athletes/index.html')
+
+def athlete_edit(request, athlete_id):
+    athlete = get_object_or_404(Athlete, pk=athlete_id)
+    edit_athlete_form = AthleteForm(request.POST, instance=athlete)
+    if edit_athlete_form.is_valid():
+        edit_athlete_form.save()
+        return redirect('index')
+    return render(request, 'athletes/index.html')
 
 def athlete_delete(request, athlete_id):
 	athlete = get_object_or_404(Athlete, pk=athlete_id)
 	if request.method=='POST':
-			athlete.delete()
-			return redirect('index')
+		athlete.delete()
+		return redirect('index')
 	return render(request, 'athletes/index.html')
 
 
