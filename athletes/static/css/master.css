@@ -1,15 +1,24 @@
 html, body {
     margin: 0px;
+    background: url('http://www.sportissue.com/wp-content/uploads/2014/07/Adidas-Soccer-Shoe-1080p-HD-Sports-Wallpaper-HD-Wallpapers-Source.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto Condensed';
 }
 
+a {
+    font-color: white;
+}
 body:before, body:after {
-    content: "";
+/*    content: "";
     position: fixed;
-    background: #404040;
+    background: #071B07;
     left: 0;
     right: 0;
     height: 25px;
-    z-index: 100;
+    z-index: 100;*/
 }
 body:before {
     top: 0;
@@ -18,11 +27,9 @@ body:after {
     bottom: 0;
 }
 body {
-    border-left: 25px solid #404040;
-    border-right: 25px solid #404040;  
-    padding: 25px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 	font-size: 16px;
-    /*background-color: #5B5950;*/
 }
 
 h1 {
@@ -34,9 +41,9 @@ table {
     text-align: center;
 }
 
-tr:nth-child(even).not(.table_form) {
+/*tr:nth-child(even).not(.table_form) {
     background-color: #e7e7e7;
-}
+}*/
 
 ul.errorlist {
     display:none;
@@ -45,8 +52,37 @@ ul.errorlist {
 .filler {
     height: 500px;
     text-align: center;
+    background-color: #0C310C;
 }
 
+.header {
+    font-size: 80px;
+    color: white;
+    opacity: .7;
+    margin: 20px;
+    font-family: 'Graduate';
+}
+
+.navbar {
+    opacity: .9;
+}
+.table_athletes {
+    border-radius: .5;
+    margin-top: 20px;
+    opacity: .5;
+    color: white;
+    background-color: #0C310C;
+    border-collapse: separate;
+    border: solid #114411 1px;
+    border-radius: 10px;
+    z-index: -100;
+}
+
+.table_athletes th {
+    text-align: center;
+    font-size: 1.4em;
+    height: 50px;
+}
 .table_form tbody tr {
     height: 30px;
     text-align: left;

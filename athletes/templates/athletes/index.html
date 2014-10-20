@@ -5,17 +5,17 @@
 	{% include "athletes/_nav.html" %}
 	
 	{% if athletes.count > 0 %}
-		<table>
+		<table class="table_athletes">
 			<tr>
-				<td>Number</td>
-				<td>Name</td>
-				<td>Position</td>
-				<td>Sport</td>
-				<td>League</td>
-				<td>Division</td>
-				<td>Team</td>
-				<td>Edit</td>
-				<td>Delete</td>
+				<th>Number</th>
+				<th>Name</th>
+				<th>Position</th>
+				<th>Sport</th>
+				<th>League</th>
+				<th>Division</th>
+				<th>Team</th>
+				<th>Edit</th>
+				<th>Delete</th>
 			</tr>
 			<tbody class="searchable">
 		{% for athlete in athletes %}
