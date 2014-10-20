@@ -1,0 +1,1470 @@
+[
+  {
+    "model": "athletes.sport",
+    "pk": "1",
+    "fields": {
+      "name": "Football"
+    }
+  },
+  {
+    "model": "athletes.sport",
+    "pk": "2",
+    "fields": {
+      "name": "Basketball"
+    }
+  },
+  {
+    "model": "athletes.sport",
+    "pk": "3",
+    "fields": {
+      "name": "Baseball"
+    }
+  },
+  {
+    "model": "athletes.sport",
+    "pk": "4",
+    "fields": {
+      "name": "Hockey"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "1",
+    "fields": {
+      "name": "NFL",
+      "sport": "1"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "2",
+    "fields": {
+      "name": "NCAAF",
+      "sport": "1"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "3",
+    "fields": {
+      "name": "NBA",
+      "sport": "2"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "4",
+    "fields": {
+      "name": "NCAAM",
+      "sport": "2"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "5",
+    "fields": {
+      "name": "MLB",
+      "sport": "3"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "6",
+    "fields": {
+      "name": "NHL",
+      "sport": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "1",
+    "fields": {
+      "name": "NFC East",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "2",
+    "fields": {
+      "name": "AFC East",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "3",
+    "fields": {
+      "name": "NFC West",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "4",
+    "fields": {
+      "name": "AFC West",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "5",
+    "fields": {
+      "name": "NFC North",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "6",
+    "fields": {
+      "name": "AFC North",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "7",
+    "fields": {
+      "name": "NFC South",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "8",
+    "fields": {
+      "name": "AFC South",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "9",
+    "fields": {
+      "name": "American Athletic",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "10",
+    "fields": {
+      "name": "ACC",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "11",
+    "fields": {
+      "name": "Big 12",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "12",
+    "fields": {
+      "name": "Big Ten",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "13",
+    "fields": {
+      "name": "Conference USA",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "14",
+    "fields": {
+      "name": "FBS Independents",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "15",
+    "fields": {
+      "name": "Mid-American",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "16",
+    "fields": {
+      "name": "Mountain West",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "17",
+    "fields": {
+      "name": "Pac-12",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "18",
+    "fields": {
+      "name": "SEC",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "19",
+    "fields": {
+      "name": "Sun Belt",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "20",
+    "fields": {
+      "name": "Big Sky",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "21",
+    "fields": {
+      "name": "Big South",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "22",
+    "fields": {
+      "name": "CAA",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "23",
+    "fields": {
+      "name": "FCS Independents",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "24",
+    "fields": {
+      "name": "Ivy",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "25",
+    "fields": {
+      "name": "MEAC",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "26",
+    "fields": {
+      "name": "Missouri Valley",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "27",
+    "fields": {
+      "name": "Northeast",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "28",
+    "fields": {
+      "name": "Ohio Valley",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "29",
+    "fields": {
+      "name": "Patriot League",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "30",
+    "fields": {
+      "name": "Pioneer",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "31",
+    "fields": {
+      "name": "Southern",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "32",
+    "fields": {
+      "name": "Southland",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "33",
+    "fields": {
+      "name": "SWAC",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "34",
+    "fields": {
+      "name": "Atlantic",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "35",
+    "fields": {
+      "name": "Central",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "36",
+    "fields": {
+      "name": "Southeast",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "37",
+    "fields": {
+      "name": "Southwest",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "38",
+    "fields": {
+      "name": "Northwest",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "39",
+    "fields": {
+      "name": "Pacific",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "40",
+    "fields": {
+      "name": "America East",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "41",
+    "fields": {
+      "name": "American",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "42",
+    "fields": {
+      "name": "Atlantic 10",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "43",
+    "fields": {
+      "name": "ACC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "44",
+    "fields": {
+      "name": "Atlantic Sun",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "45",
+    "fields": {
+      "name": "Big 12",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "46",
+    "fields": {
+      "name": "Big East",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "47",
+    "fields": {
+      "name": "Big Sky",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "48",
+    "fields": {
+      "name": "Big South",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "49",
+    "fields": {
+      "name": "Big Ten",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "50",
+    "fields": {
+      "name": "Big West",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "51",
+    "fields": {
+      "name": "Colonial",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "52",
+    "fields": {
+      "name": "Conference USA",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "53",
+    "fields": {
+      "name": "Independents",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "54",
+    "fields": {
+      "name": "Horizon",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "55",
+    "fields": {
+      "name": "Ivy",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "56",
+    "fields": {
+      "name": "MAAC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "57",
+    "fields": {
+      "name": "Mid-American",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "58",
+    "fields": {
+      "name": "MEAC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "59",
+    "fields": {
+      "name": "Missouri Valley",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "60",
+    "fields": {
+      "name": "Mountain West",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "61",
+    "fields": {
+      "name": "Northeast",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "62",
+    "fields": {
+      "name": "Ohio Valley",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "63",
+    "fields": {
+      "name": "Pac-12",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "64",
+    "fields": {
+      "name": "Patriot League",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "65",
+    "fields": {
+      "name": "SEC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "66",
+    "fields": {
+      "name": "Southern",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "67",
+    "fields": {
+      "name": "Southland",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "68",
+    "fields": {
+      "name": "SWAC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "69",
+    "fields": {
+      "name": "Summit League",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "70",
+    "fields": {
+      "name": "Sun Belt",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "71",
+    "fields": {
+      "name": "West Coast",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "72",
+    "fields": {
+      "name": "WAC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "73",
+    "fields": {
+      "name": "AL East",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "74",
+    "fields": {
+      "name": "AL Central",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "75",
+    "fields": {
+      "name": "AL West",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "76",
+    "fields": {
+      "name": "NL East",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "77",
+    "fields": {
+      "name": "NL Central",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "78",
+    "fields": {
+      "name": "NL West",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "79",
+    "fields": {
+      "name": "Atlantic",
+      "league": "6"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "80",
+    "fields": {
+      "name": "Metropolitan",
+      "league": "6"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "81",
+    "fields": {
+      "name": "Pacific",
+      "league": "6"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "82",
+    "fields": {
+      "name": "Central",
+      "league": "6"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "1",
+    "fields": {
+      "name": "Dallas Cowboys",
+      "division": "1"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "2",
+    "fields": {
+      "name": "New York Giants",
+      "division": "1"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "3",
+    "fields": {
+      "name": "Philadelphia Eagles",
+      "division": "1"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "4",
+    "fields": {
+      "name": "Washington Redskins",
+      "division": "1"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "5",
+    "fields": {
+      "name": "Buffalo Bills",
+      "division": "2"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "6",
+    "fields": {
+      "name": "Miami Dolphins",
+      "division": "2"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "7",
+    "fields": {
+      "name": "New England Patriots",
+      "division": "2"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "8",
+    "fields": {
+      "name": "New York Jets",
+      "division": "2"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "9",
+    "fields": {
+      "name": "Arizona Cardinals",
+      "division": "3"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "10",
+    "fields": {
+      "name": "St. Louis Rams",
+      "division": "3"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "11",
+    "fields": {
+      "name": "San Francisco 49ers",
+      "division": "3"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "12",
+    "fields": {
+      "name": "Seattle Seahawks",
+      "division": "3"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "13",
+    "fields": {
+      "name": "Denver Broncos",
+      "division": "4"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "14",
+    "fields": {
+      "name": "Kansas City Chiefs",
+      "division": "4"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "15",
+    "fields": {
+      "name": "Oakland Raiders",
+      "division": "4"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "16",
+    "fields": {
+      "name": "San Diego Chargers",
+      "division": "4"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "17",
+    "fields": {
+      "name": "Chicago Bears",
+      "division": "5"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "18",
+    "fields": {
+      "name": "Detroit Lions",
+      "division": "5"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "19",
+    "fields": {
+      "name": "Green Bay Packers",
+      "division": "5"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "20",
+    "fields": {
+      "name": "Minnesota Vikings",
+      "division": "5"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "21",
+    "fields": {
+      "name": "Baltimore Ravens",
+      "division": "6"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "22",
+    "fields": {
+      "name": "Cincinnati Bengals",
+      "division": "6"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "23",
+    "fields": {
+      "name": "Cleveland Browns",
+      "division": "6"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "24",
+    "fields": {
+      "name": "Pittsburgh Steelers",
+      "division": "6"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "25",
+    "fields": {
+      "name": "Atlanta Falcons",
+      "division": "7"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "26",
+    "fields": {
+      "name": "Carolina Panthers",
+      "division": "7"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "27",
+    "fields": {
+      "name": "New Orleans Saints",
+      "division": "7"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "28",
+    "fields": {
+      "name": "Tampa Bay Buccaneers",
+      "division": "7"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "29",
+    "fields": {
+      "name": "Houston Texans",
+      "division": "8"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "30",
+    "fields": {
+      "name": "Indianapolis Colts",
+      "division": "8"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "31",
+    "fields": {
+      "name": "Jacksonville Jaguars",
+      "division": "8"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "32",
+    "fields": {
+      "name": "Tennessee Titans",
+      "division": "8"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "33",
+    "fields": {
+      "name": "Boston Celtics",
+      "division": "9"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "34",
+    "fields": {
+      "name": "Brooklyn Nets",
+      "division": "9"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "35",
+    "fields": {
+      "name": "New York Knicks",
+      "division": "9"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "36",
+    "fields": {
+      "name": "Philadelphia 76ers",
+      "division": "9"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "37",
+    "fields": {
+      "name": "Toronto Raptors",
+      "division": "9"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "38",
+    "fields": {
+      "name": "Chicago Bulls",
+      "division": "10"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "39",
+    "fields": {
+      "name": "Cleveland Cavaliers",
+      "division": "10"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "40",
+    "fields": {
+      "name": "Detroit Pistons",
+      "division": "10"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "41",
+    "fields": {
+      "name": "Indiana Pacers",
+      "division": "10"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "42",
+    "fields": {
+      "name": "Milwaukee Bucks",
+      "division": "10"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "43",
+    "fields": {
+      "name": "Atlanta Hawks",
+      "division": "11"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "44",
+    "fields": {
+      "name": "Charlotte Hornets",
+      "division": "11"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "45",
+    "fields": {
+      "name": "Miami Heat",
+      "division": "11"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "46",
+    "fields": {
+      "name": "Orlando Magic",
+      "division": "11"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "47",
+    "fields": {
+      "name": "Washington Wizards",
+      "division": "11"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "48",
+    "fields": {
+      "name": "Dallas Mavericks",
+      "division": "12"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "49",
+    "fields": {
+      "name": "Houston Rockets",
+      "division": "12"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "50",
+    "fields": {
+      "name": "Memphis Grizzlies",
+      "division": "12"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "51",
+    "fields": {
+      "name": "New Orleans Pelicans",
+      "division": "12"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "52",
+    "fields": {
+      "name": "San Antonio Spurs",
+      "division": "12"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "53",
+    "fields": {
+      "name": "Denver Nuggets",
+      "division": "13"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "54",
+    "fields": {
+      "name": "Minnesota Timberwolves",
+      "division": "13"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "55",
+    "fields": {
+      "name": "Oklahoma City Thunder",
+      "division": "13"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "56",
+    "fields": {
+      "name": "Portland Trail Blazers",
+      "division": "13"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "57",
+    "fields": {
+      "name": "Utah Jazz",
+      "division": "13"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "58",
+    "fields": {
+      "name": "Golden State Warriors",
+      "division": "14"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "59",
+    "fields": {
+      "name": "Los Angeles Clippers",
+      "division": "14"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "60",
+    "fields": {
+      "name": "Los Angeles Lakers",
+      "division": "14"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "61",
+    "fields": {
+      "name": "Phoenix Suns",
+      "division": "14"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "62",
+    "fields": {
+      "name": "Sacramento Kings",
+      "division": "14"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "63",
+    "fields": {
+      "name": "Baltimore Orioles",
+      "division": "15"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "64",
+    "fields": {
+      "name": "Boston Red Socks",
+      "division": "15"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "65",
+    "fields": {
+      "name": "New York Yankees",
+      "division": "15"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "66",
+    "fields": {
+      "name": "Tampa Bay Rays",
+      "division": "15"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "67",
+    "fields": {
+      "name": "Toronto Blue Jays",
+      "division": "15"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "68",
+    "fields": {
+      "name": "Chicago White Sox",
+      "division": "16"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "69",
+    "fields": {
+      "name": "Cleveland Indians",
+      "division": "16"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "70",
+    "fields": {
+      "name": "Detroit Tigers",
+      "division": "16"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "71",
+    "fields": {
+      "name": "Kansas City Royals",
+      "division": "16"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "72",
+    "fields": {
+      "name": "Minnesota Twins",
+      "division": "16"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "73",
+    "fields": {
+      "name": "Houston Astros",
+      "division": "17"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "74",
+    "fields": {
+      "name": "Los Angeles Angels",
+      "division": "17"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "75",
+    "fields": {
+      "name": "Oakland Athletics",
+      "division": "17"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "76",
+    "fields": {
+      "name": "Seattle Mariners",
+      "division": "17"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "77",
+    "fields": {
+      "name": "Texas Rangers",
+      "division": "17"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "78",
+    "fields": {
+      "name": "Atlanta Braves",
+      "division": "18"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "79",
+    "fields": {
+      "name": "Miami Marlins",
+      "division": "18"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "80",
+    "fields": {
+      "name": "New York Mets",
+      "division": "18"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "81",
+    "fields": {
+      "name": "Philadelphia Phillies",
+      "division": "18"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "82",
+    "fields": {
+      "name": "Washington Nationals",
+      "division": "18"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "83",
+    "fields": {
+      "name": "Chicago Cubs",
+      "division": "19"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "84",
+    "fields": {
+      "name": "Cincinnati Reds",
+      "division": "19"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "85",
+    "fields": {
+      "name": "Milwaukee Brewers",
+      "division": "19"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "86",
+    "fields": {
+      "name": "Pittsburgh Pirates",
+      "division": "19"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "87",
+    "fields": {
+      "name": "St. Louis Cardinals",
+      "division": "19"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "88",
+    "fields": {
+      "name": "Arizona Diamondbacks",
+      "division": "20"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "89",
+    "fields": {
+      "name": "Colorado Rockies",
+      "division": "20"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "90",
+    "fields": {
+      "name": "Los Angeles Dodgers",
+      "division": "20"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "91",
+    "fields": {
+      "name": "San Diego Padres",
+      "division": "20"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "92",
+    "fields": {
+      "name": "San Francisco Giants",
+      "division": "20"
+    }
+  }
+]
