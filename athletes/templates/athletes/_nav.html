@@ -31,7 +31,7 @@
           {% if league %}{{ league.name.upper }}{% else %}LEAGUE {% endif %}<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             {% for league in leagues %}
-              <li><a href="{% url 'league_list' sport.id league.id %}">{{ league }}</a></li>
+              <li><a href="{% url 'league_list' league.id %}">{{ league }}</a></li>
             {% endfor %}
             <li class="divider"></li>
             <li><a href="#" data-toggle="modal" data-target="#league_create">Add League</a></li>
@@ -42,7 +42,7 @@
           {% if division %}{{ division.name.upper }}{% else %}DIVISION {% endif %}<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             {% for division in divisions %}
-              <li><a href="{% url 'division_list' sport.id league.id division.id %}">{{ division }}</a></li>
+              <li><a href="{% url 'division_list' division.id %}">{{ division }}</a></li>
             {% endfor %}
             <li class="divider"></li>
             <li><a href="#" data-toggle="modal" data-target="#division_create">Add Division</a></li>
@@ -54,7 +54,7 @@
           <ul class="dropdown-menu" role="menu">
             {% if division %}
               {% for team in teams %}
-                <li><a href="{% url 'team_list' sport.id league.id division.id team.id %}">{{ team }}</a></li>
+                <li><a href="{% url 'team_list' team.id %}">{{ team }}</a></li>
               {% endfor %}
             {% endif %}
             <li class="divider"></li>

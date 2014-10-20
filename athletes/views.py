@@ -25,7 +25,7 @@ def sport_list(request, sport_id):
 	data = {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'teams': teams, 'athlete_form': athlete_form}
 	return render(request, 'athletes/index.html', data)
 
-def league_list(request, sport_id, league_id):
+def league_list(request, league_id):
 	league = get_object_or_404(League, pk=league_id)
 	sports = Sport.objects.order_by('name')
 	leagues = league.sport.league_set.order_by('name')
@@ -37,7 +37,7 @@ def league_list(request, sport_id, league_id):
 	data = {'sport': league.sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'teams': teams, 'athlete_form': athlete_form}
 	return render(request, 'athletes/index.html', data)
 
-def division_list(request, sport_id, league_id, division_id):
+def division_list(request, division_id):
 	division = get_object_or_404(Division, pk=division_id)
 	sports = Sport.objects.order_by('name')
 	leagues = division.league.sport.league_set.order_by('name')
@@ -49,7 +49,7 @@ def division_list(request, sport_id, league_id, division_id):
 	data = {'sport': division.league.sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': division.league, 'divisions': divisions, 'division': division, 'teams': teams, 'athlete_form': athlete_form}
 	return render(request, 'athletes/index.html', data)
 
-def team_list(request, sport_id, league_id, division_id, team_id):
+def team_list(request, team_id):
 	team = get_object_or_404(Team, pk=team_id)
 	sports = Sport.objects.order_by('name')
 	leagues = team.division.league.sport.league_set.order_by('name')
@@ -86,29 +86,29 @@ def athlete_delete(request, athlete_id):
 def sport_create(request):
 	sport_form = SportForm(request.POST)
 	if sport_form.is_valid():
-		sport_form.save()
-		return redirect('index')
+		sport = sport_form.save()
+		return redirect('sport_list', sport.id)
 	return render(request, 'athletes/index.html')
 
 def league_create(request):
 	league_form = LeagueForm(request.POST)
 	if league_form.is_valid():
-		league_form.save()
-		return redirect('index')
+		league = league_form.save()
+		return redirect('league_list', league.id)
 	return render(request, 'athletes/index.html')
 
 def division_create(request):
 	division_form = DivisionForm(request.POST)
 	if division_form.is_valid():
-		division_form.save()
-		return redirect('index')
+		division = division_form.save()
+		return redirect('division_list', division.id)
 	return render(request, 'athletes/index.html')
 
 def team_create(request):
 	team_form = TeamForm(request.POST)
 	if team_form.is_valid():
-		team_form.save()
-		return redirect('index')
+		team = team_form.save()
+		return redirect('team_list', team.id)
 	return render(request, 'athletes/index.html')
 
 
