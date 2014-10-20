@@ -1,0 +1,3802 @@
+[
+  {
+    "model": "athletes.sport",
+    "pk": "1",
+    "fields": {
+      "name": "Football"
+    }
+  },
+  {
+    "model": "athletes.sport",
+    "pk": "2",
+    "fields": {
+      "name": "Basketball"
+    }
+  },
+  {
+    "model": "athletes.sport",
+    "pk": "3",
+    "fields": {
+      "name": "Baseball"
+    }
+  },
+  {
+    "model": "athletes.sport",
+    "pk": "4",
+    "fields": {
+      "name": "Hockey"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "1",
+    "fields": {
+      "name": "NFL",
+      "sport": "1"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "2",
+    "fields": {
+      "name": "NCAAF",
+      "sport": "1"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "3",
+    "fields": {
+      "name": "NBA",
+      "sport": "2"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "4",
+    "fields": {
+      "name": "NCAAM",
+      "sport": "2"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "5",
+    "fields": {
+      "name": "MLB",
+      "sport": "3"
+    }
+  },
+  {
+    "model": "athletes.league",
+    "pk": "6",
+    "fields": {
+      "name": "NHL",
+      "sport": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "1",
+    "fields": {
+      "name": "NFC East",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "2",
+    "fields": {
+      "name": "AFC East",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "3",
+    "fields": {
+      "name": "NFC West",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "4",
+    "fields": {
+      "name": "AFC West",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "5",
+    "fields": {
+      "name": "NFC North",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "6",
+    "fields": {
+      "name": "AFC North",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "7",
+    "fields": {
+      "name": "NFC South",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "8",
+    "fields": {
+      "name": "AFC South",
+      "league": "1"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "9",
+    "fields": {
+      "name": "American Athletic",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "10",
+    "fields": {
+      "name": "ACC",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "11",
+    "fields": {
+      "name": "Big 12",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "12",
+    "fields": {
+      "name": "Big Ten",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "13",
+    "fields": {
+      "name": "Conference USA",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "14",
+    "fields": {
+      "name": "FBS Independents",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "15",
+    "fields": {
+      "name": "Mid-American",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "16",
+    "fields": {
+      "name": "Mountain West",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "17",
+    "fields": {
+      "name": "Pac-12",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "18",
+    "fields": {
+      "name": "SEC",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "19",
+    "fields": {
+      "name": "Sun Belt",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "20",
+    "fields": {
+      "name": "Big Sky",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "21",
+    "fields": {
+      "name": "Big South",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "22",
+    "fields": {
+      "name": "CAA",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "23",
+    "fields": {
+      "name": "FCS Independents",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "24",
+    "fields": {
+      "name": "Ivy",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "25",
+    "fields": {
+      "name": "MEAC",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "26",
+    "fields": {
+      "name": "Missouri Valley",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "27",
+    "fields": {
+      "name": "Northeast",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "28",
+    "fields": {
+      "name": "Ohio Valley",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "29",
+    "fields": {
+      "name": "Patriot League",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "30",
+    "fields": {
+      "name": "Pioneer",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "31",
+    "fields": {
+      "name": "Southern",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "32",
+    "fields": {
+      "name": "Southland",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "33",
+    "fields": {
+      "name": "SWAC",
+      "league": "2"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "34",
+    "fields": {
+      "name": "Atlantic",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "35",
+    "fields": {
+      "name": "Central",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "36",
+    "fields": {
+      "name": "Southeast",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "37",
+    "fields": {
+      "name": "Southwest",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "38",
+    "fields": {
+      "name": "Northwest",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "39",
+    "fields": {
+      "name": "Pacific",
+      "league": "3"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "40",
+    "fields": {
+      "name": "America East",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "41",
+    "fields": {
+      "name": "American",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "42",
+    "fields": {
+      "name": "Atlantic 10",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "43",
+    "fields": {
+      "name": "ACC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "44",
+    "fields": {
+      "name": "Atlantic Sun",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "45",
+    "fields": {
+      "name": "Big 12",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "46",
+    "fields": {
+      "name": "Big East",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "47",
+    "fields": {
+      "name": "Big Sky",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "48",
+    "fields": {
+      "name": "Big South",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "49",
+    "fields": {
+      "name": "Big Ten",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "50",
+    "fields": {
+      "name": "Big West",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "51",
+    "fields": {
+      "name": "Colonial",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "52",
+    "fields": {
+      "name": "Conference USA",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "53",
+    "fields": {
+      "name": "Independents",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "54",
+    "fields": {
+      "name": "Horizon",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "55",
+    "fields": {
+      "name": "Ivy",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "56",
+    "fields": {
+      "name": "MAAC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "57",
+    "fields": {
+      "name": "Mid-American",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "58",
+    "fields": {
+      "name": "MEAC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "59",
+    "fields": {
+      "name": "Missouri Valley",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "60",
+    "fields": {
+      "name": "Mountain West",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "61",
+    "fields": {
+      "name": "Northeast",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "62",
+    "fields": {
+      "name": "Ohio Valley",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "63",
+    "fields": {
+      "name": "Pac-12",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "64",
+    "fields": {
+      "name": "Patriot League",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "65",
+    "fields": {
+      "name": "SEC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "66",
+    "fields": {
+      "name": "Southern",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "67",
+    "fields": {
+      "name": "Southland",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "68",
+    "fields": {
+      "name": "SWAC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "69",
+    "fields": {
+      "name": "Summit League",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "70",
+    "fields": {
+      "name": "Sun Belt",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "71",
+    "fields": {
+      "name": "West Coast",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "72",
+    "fields": {
+      "name": "WAC",
+      "league": "4"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "73",
+    "fields": {
+      "name": "AL East",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "74",
+    "fields": {
+      "name": "AL Central",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "75",
+    "fields": {
+      "name": "AL West",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "76",
+    "fields": {
+      "name": "NL East",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "77",
+    "fields": {
+      "name": "NL Central",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "78",
+    "fields": {
+      "name": "NL West",
+      "league": "5"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "79",
+    "fields": {
+      "name": "Atlantic",
+      "league": "6"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "80",
+    "fields": {
+      "name": "Metropolitan",
+      "league": "6"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "81",
+    "fields": {
+      "name": "Pacific",
+      "league": "6"
+    }
+  },
+  {
+    "model": "athletes.division",
+    "pk": "82",
+    "fields": {
+      "name": "Central",
+      "league": "6"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "1",
+    "fields": {
+      "name": "Dallas Cowboys",
+      "division": "1"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "2",
+    "fields": {
+      "name": "New York Giants",
+      "division": "1"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "3",
+    "fields": {
+      "name": "Philadelphia Eagles",
+      "division": "1"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "4",
+    "fields": {
+      "name": "Washington Redskins",
+      "division": "1"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "5",
+    "fields": {
+      "name": "Buffalo Bills",
+      "division": "2"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "6",
+    "fields": {
+      "name": "Miami Dolphins",
+      "division": "2"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "7",
+    "fields": {
+      "name": "New England Patriots",
+      "division": "2"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "8",
+    "fields": {
+      "name": "New York Jets",
+      "division": "2"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "9",
+    "fields": {
+      "name": "Arizona Cardinals",
+      "division": "3"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "10",
+    "fields": {
+      "name": "St. Louis Rams",
+      "division": "3"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "11",
+    "fields": {
+      "name": "San Francisco 49ers",
+      "division": "3"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "12",
+    "fields": {
+      "name": "Seattle Seahawks",
+      "division": "3"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "13",
+    "fields": {
+      "name": "Denver Broncos",
+      "division": "4"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "14",
+    "fields": {
+      "name": "Kansas City Chiefs",
+      "division": "4"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "15",
+    "fields": {
+      "name": "Oakland Raiders",
+      "division": "4"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "16",
+    "fields": {
+      "name": "San Diego Chargers",
+      "division": "4"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "17",
+    "fields": {
+      "name": "Chicago Bears",
+      "division": "5"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "18",
+    "fields": {
+      "name": "Detroit Lions",
+      "division": "5"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "19",
+    "fields": {
+      "name": "Green Bay Packers",
+      "division": "5"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "20",
+    "fields": {
+      "name": "Minnesota Vikings",
+      "division": "5"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "21",
+    "fields": {
+      "name": "Baltimore Ravens",
+      "division": "6"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "22",
+    "fields": {
+      "name": "Cincinnati Bengals",
+      "division": "6"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "23",
+    "fields": {
+      "name": "Cleveland Browns",
+      "division": "6"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "24",
+    "fields": {
+      "name": "Pittsburgh Steelers",
+      "division": "6"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "25",
+    "fields": {
+      "name": "Atlanta Falcons",
+      "division": "7"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "26",
+    "fields": {
+      "name": "Carolina Panthers",
+      "division": "7"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "27",
+    "fields": {
+      "name": "New Orleans Saints",
+      "division": "7"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "28",
+    "fields": {
+      "name": "Tampa Bay Buccaneers",
+      "division": "7"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "29",
+    "fields": {
+      "name": "Houston Texans",
+      "division": "8"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "30",
+    "fields": {
+      "name": "Indianapolis Colts",
+      "division": "8"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "31",
+    "fields": {
+      "name": "Jacksonville Jaguars",
+      "division": "8"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "32",
+    "fields": {
+      "name": "Tennessee Titans",
+      "division": "8"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "33",
+    "fields": {
+      "name": "Boston Celtics",
+      "division": "34"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "34",
+    "fields": {
+      "name": "Brooklyn Nets",
+      "division": "34"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "35",
+    "fields": {
+      "name": "New York Knicks",
+      "division": "34"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "36",
+    "fields": {
+      "name": "Philadelphia 76ers",
+      "division": "34"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "37",
+    "fields": {
+      "name": "Toronto Raptors",
+      "division": "34"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "38",
+    "fields": {
+      "name": "Chicago Bulls",
+      "division": "35"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "39",
+    "fields": {
+      "name": "Cleveland Cavaliers",
+      "division": "35"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "40",
+    "fields": {
+      "name": "Detroit Pistons",
+      "division": "35"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "41",
+    "fields": {
+      "name": "Indiana Pacers",
+      "division": "35"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "42",
+    "fields": {
+      "name": "Milwaukee Bucks",
+      "division": "35"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "43",
+    "fields": {
+      "name": "Atlanta Hawks",
+      "division": "36"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "44",
+    "fields": {
+      "name": "Charlotte Hornets",
+      "division": "36"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "45",
+    "fields": {
+      "name": "Miami Heat",
+      "division": "36"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "46",
+    "fields": {
+      "name": "Orlando Magic",
+      "division": "36"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "47",
+    "fields": {
+      "name": "Washington Wizards",
+      "division": "36"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "48",
+    "fields": {
+      "name": "Dallas Mavericks",
+      "division": "37"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "49",
+    "fields": {
+      "name": "Houston Rockets",
+      "division": "37"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "50",
+    "fields": {
+      "name": "Memphis Grizzlies",
+      "division": "37"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "51",
+    "fields": {
+      "name": "New Orleans Pelicans",
+      "division": "37"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "52",
+    "fields": {
+      "name": "San Antonio Spurs",
+      "division": "37"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "53",
+    "fields": {
+      "name": "Denver Nuggets",
+      "division": "38"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "54",
+    "fields": {
+      "name": "Minnesota Timberwolves",
+      "division": "38"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "55",
+    "fields": {
+      "name": "Oklahoma City Thunder",
+      "division": "38"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "56",
+    "fields": {
+      "name": "Portland Trail Blazers",
+      "division": "38"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "57",
+    "fields": {
+      "name": "Utah Jazz",
+      "division": "38"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "58",
+    "fields": {
+      "name": "Golden State Warriors",
+      "division": "39"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "59",
+    "fields": {
+      "name": "Los Angeles Clippers",
+      "division": "39"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "60",
+    "fields": {
+      "name": "Los Angeles Lakers",
+      "division": "39"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "61",
+    "fields": {
+      "name": "Phoenix Suns",
+      "division": "39"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "62",
+    "fields": {
+      "name": "Sacramento Kings",
+      "division": "39"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "63",
+    "fields": {
+      "name": "Baltimore Orioles",
+      "division": "73"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "64",
+    "fields": {
+      "name": "Boston Red Socks",
+      "division": "73"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "65",
+    "fields": {
+      "name": "New York Yankees",
+      "division": "73"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "66",
+    "fields": {
+      "name": "Tampa Bay Rays",
+      "division": "73"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "67",
+    "fields": {
+      "name": "Toronto Blue Jays",
+      "division": "73"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "68",
+    "fields": {
+      "name": "Chicago White Sox",
+      "division": "74"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "69",
+    "fields": {
+      "name": "Cleveland Indians",
+      "division": "74"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "70",
+    "fields": {
+      "name": "Detroit Tigers",
+      "division": "74"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "71",
+    "fields": {
+      "name": "Kansas City Royals",
+      "division": "74"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "72",
+    "fields": {
+      "name": "Minnesota Twins",
+      "division": "74"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "73",
+    "fields": {
+      "name": "Houston Astros",
+      "division": "75"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "74",
+    "fields": {
+      "name": "Los Angeles Angels",
+      "division": "75"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "75",
+    "fields": {
+      "name": "Oakland Athletics",
+      "division": "75"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "76",
+    "fields": {
+      "name": "Seattle Mariners",
+      "division": "75"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "77",
+    "fields": {
+      "name": "Texas Rangers",
+      "division": "75"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "78",
+    "fields": {
+      "name": "Atlanta Braves",
+      "division": "76"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "79",
+    "fields": {
+      "name": "Miami Marlins",
+      "division": "76"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "80",
+    "fields": {
+      "name": "New York Mets",
+      "division": "76"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "81",
+    "fields": {
+      "name": "Philadelphia Phillies",
+      "division": "76"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "82",
+    "fields": {
+      "name": "Washington Nationals",
+      "division": "76"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "83",
+    "fields": {
+      "name": "Chicago Cubs",
+      "division": "77"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "84",
+    "fields": {
+      "name": "Cincinnati Reds",
+      "division": "77"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "85",
+    "fields": {
+      "name": "Milwaukee Brewers",
+      "division": "77"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "86",
+    "fields": {
+      "name": "Pittsburgh Pirates",
+      "division": "77"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "87",
+    "fields": {
+      "name": "St. Louis Cardinals",
+      "division": "77"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "88",
+    "fields": {
+      "name": "Arizona Diamondbacks",
+      "division": "78"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "89",
+    "fields": {
+      "name": "Colorado Rockies",
+      "division": "78"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "90",
+    "fields": {
+      "name": "Los Angeles Dodgers",
+      "division": "78"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "91",
+    "fields": {
+      "name": "San Diego Padres",
+      "division": "78"
+    }
+  },
+  {
+    "model": "athletes.team",
+    "pk": "92",
+    "fields": {
+      "name": "San Francisco Giants",
+      "division": "78"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "1",
+    "fields": {
+      "first_name": "Quincy",
+      "last_name": "Acy",
+      "position": "SF",
+      "number": "4",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "2",
+    "fields": {
+      "first_name": "Cole",
+      "last_name": "Aldrich",
+      "position": "C",
+      "number": "45",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "3",
+    "fields": {
+      "first_name": "Thanasis",
+      "last_name": "Antetokounmpo",
+      "position": "SF",
+      "number": "43",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "4",
+    "fields": {
+      "first_name": "Carmelo",
+      "last_name": "Anthony",
+      "position": "SF",
+      "number": "7",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "5",
+    "fields": {
+      "first_name": "Andrea",
+      "last_name": "Bargnani",
+      "position": "C",
+      "number": "77",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "6",
+    "fields": {
+      "first_name": "Jose",
+      "last_name": "Calderon",
+      "position": "PG",
+      "number": "3",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "7",
+    "fields": {
+      "first_name": "Samuel",
+      "last_name": "Dalembert",
+      "position": "C",
+      "number": "11",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "8",
+    "fields": {
+      "first_name": "Cleanthony",
+      "last_name": "Early",
+      "position": "SF",
+      "number": "17",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "9",
+    "fields": {
+      "first_name": "Langston",
+      "last_name": "Galloway",
+      "position": "PG",
+      "number": "2",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "10",
+    "fields": {
+      "first_name": "Tim",
+      "last_name": "Hardaway Jr.",
+      "position": "SG",
+      "number": "5",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "11",
+    "fields": {
+      "first_name": "Didier",
+      "last_name": "Ilunga-Mbenga",
+      "position": "C",
+      "number": "28",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "12",
+    "fields": {
+      "first_name": "Shane",
+      "last_name": "Larkin",
+      "position": "PG",
+      "number": "0",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "13",
+    "fields": {
+      "first_name": "Travis",
+      "last_name": "Outlaw",
+      "position": "SF",
+      "number": "25",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "14",
+    "fields": {
+      "first_name": "Pablo",
+      "last_name": "Prigioni",
+      "position": "PG",
+      "number": "9",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "15",
+    "fields": {
+      "first_name": "Orlando",
+      "last_name": "Sanchez",
+      "position": "PF",
+      "number": "26",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "16",
+    "fields": {
+      "first_name": "Iman",
+      "last_name": "Shumpert",
+      "position": "SG",
+      "number": "21",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "17",
+    "fields": {
+      "first_name": "J.R.",
+      "last_name": "Smith",
+      "position": "SG",
+      "number": "8",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "18",
+    "fields": {
+      "first_name": "Jason",
+      "last_name": "Smith",
+      "position": "C",
+      "number": "14",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "19",
+    "fields": {
+      "first_name": "Amare",
+      "last_name": "Stoudemire",
+      "position": "PF",
+      "number": "1",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "20",
+    "fields": {
+      "first_name": "Travis",
+      "last_name": "Wear",
+      "position": "SF",
+      "number": "6",
+      "team": "35"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "21",
+    "fields": {
+      "first_name": "Dario",
+      "last_name": "Alvarez",
+      "position": "RP",
+      "number": "68",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "22",
+    "fields": {
+      "first_name": "Vic",
+      "last_name": "Black",
+      "position": "RP",
+      "number": "38",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "23",
+    "fields": {
+      "first_name": "Buddy",
+      "last_name": "Carlyle",
+      "position": "RP",
+      "number": "44",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "24",
+    "fields": {
+      "first_name": "Bartolo",
+      "last_name": "Colon",
+      "position": "SP",
+      "number": "40",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "25",
+    "fields": {
+      "first_name": "Jacob",
+      "last_name": "deGrom",
+      "position": "SP",
+      "number": "48",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "26",
+    "fields": {
+      "first_name": "Josh",
+      "last_name": "Edgin",
+      "position": "RP",
+      "number": "66",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "27",
+    "fields": {
+      "first_name": "Dana",
+      "last_name": "Eveland",
+      "position": "RP",
+      "number": "61",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "28",
+    "fields": {
+      "first_name": "Jeurys",
+      "last_name": "Familia",
+      "position": "RP",
+      "number": "27",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "29",
+    "fields": {
+      "first_name": "Dillon",
+      "last_name": "Gee",
+      "position": "SP",
+      "number": "35",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "30",
+    "fields": {
+      "first_name": "Gonzalez",
+      "last_name": "Germen",
+      "position": "RP",
+      "number": "71",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "31",
+    "fields": {
+      "first_name": "Erik",
+      "last_name": "Goeddel",
+      "position": "RP",
+      "number": "62",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "32",
+    "fields": {
+      "first_name": "Daisuke",
+      "last_name": "Matsuzaka",
+      "position": "RP",
+      "number": "16",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "33",
+    "fields": {
+      "first_name": "Jenrry",
+      "last_name": "Mejia",
+      "position": "RP",
+      "number": "58",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "34",
+    "fields": {
+      "first_name": "Rafael",
+      "last_name": "Montero",
+      "position": "SP",
+      "number": "50",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "35",
+    "fields": {
+      "first_name": "Jonathon",
+      "last_name": "Niese",
+      "position": "SP",
+      "number": "49",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "36",
+    "fields": {
+      "first_name": "Carlos",
+      "last_name": "Torres",
+      "position": "RP",
+      "number": "52",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "37",
+    "fields": {
+      "first_name": "Zack",
+      "last_name": "Wheeler",
+      "position": "SP",
+      "number": "45",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "38",
+    "fields": {
+      "first_name": "Juan",
+      "last_name": "Centeno",
+      "position": "C",
+      "number": "36",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "39",
+    "fields": {
+      "first_name": "Travis",
+      "last_name": "dArnaud",
+      "position": "C",
+      "number": "15",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "40",
+    "fields": {
+      "first_name": "Anthony",
+      "last_name": "Recker",
+      "position": "C",
+      "number": "20",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "41",
+    "fields": {
+      "first_name": "Lucas",
+      "last_name": "Duda",
+      "position": "1B",
+      "number": "21",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "42",
+    "fields": {
+      "first_name": "Wilmer",
+      "last_name": "Flores",
+      "position": "SS",
+      "number": "4",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "43",
+    "fields": {
+      "first_name": "Dilson",
+      "last_name": "Herrera",
+      "position": "2B",
+      "number": "2",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "44",
+    "fields": {
+      "first_name": "Daniel",
+      "last_name": "Murphy",
+      "position": "2B",
+      "number": "28",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "45",
+    "fields": {
+      "first_name": "Josh",
+      "last_name": "Satin",
+      "position": "1B",
+      "number": "13",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "46",
+    "fields": {
+      "first_name": "Ruben",
+      "last_name": "Tejada",
+      "position": "SS",
+      "number": "11",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "47",
+    "fields": {
+      "first_name": "Wilfredo",
+      "last_name": "Tovar",
+      "position": "SS",
+      "number": "70",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "48",
+    "fields": {
+      "first_name": "David",
+      "last_name": "Wright",
+      "position": "3B",
+      "number": "5",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "49",
+    "fields": {
+      "first_name": "Bobby",
+      "last_name": "Abreu",
+      "position": "RF",
+      "number": "53",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "50",
+    "fields": {
+      "first_name": "Eric",
+      "last_name": "Campbell",
+      "position": "LF",
+      "number": "29",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "51",
+    "fields": {
+      "first_name": "Matt",
+      "last_name": "den Dekker",
+      "position": "LF",
+      "number": "6",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "52",
+    "fields": {
+      "first_name": "Curtis",
+      "last_name": "Granderson",
+      "position": "RF",
+      "number": "3",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "53",
+    "fields": {
+      "first_name": "Juan",
+      "last_name": "Lagares",
+      "position": "CF",
+      "number": "12",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "54",
+    "fields": {
+      "first_name": "Kirk",
+      "last_name": "Nieuwenhuis",
+      "position": "LF",
+      "number": "9",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "55",
+    "fields": {
+      "first_name": "Eric",
+      "last_name": "Young Jr.",
+      "position": "LF",
+      "number": "22",
+      "team": "80"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "56",
+    "fields": {
+      "first_name": "Dellin",
+      "last_name": "Betances",
+      "position": "RP",
+      "number": "68",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "57",
+    "fields": {
+      "first_name": "Chris",
+      "last_name": "Capuano",
+      "position": "SP",
+      "number": "26",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "58",
+    "fields": {
+      "first_name": "Preston",
+      "last_name": "Claiborne",
+      "position": "RP",
+      "number": "48",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "59",
+    "fields": {
+      "first_name": "Shane",
+      "last_name": "Greene",
+      "position": "SP",
+      "number": "61",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "60",
+    "fields": {
+      "first_name": "Rich",
+      "last_name": "Hill",
+      "position": "RP",
+      "number": "57",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "61",
+    "fields": {
+      "first_name": "David",
+      "last_name": "Huff",
+      "position": "RP",
+      "number": "55",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "62",
+    "fields": {
+      "first_name": "Shawn",
+      "last_name": "Kelley",
+      "position": "RP",
+      "number": "27",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "63",
+    "fields": {
+      "first_name": "Hiroki",
+      "last_name": "Kuroda",
+      "position": "SP",
+      "number": "18",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "64",
+    "fields": {
+      "first_name": "Brandon",
+      "last_name": "McCarthy",
+      "position": "SP",
+      "number": "38",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "65",
+    "fields": {
+      "first_name": "Bryan",
+      "last_name": "Mitchell",
+      "position": "RP",
+      "number": "65",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "66",
+    "fields": {
+      "first_name": "David",
+      "last_name": "Phelps",
+      "position": "SP",
+      "number": "41",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "67",
+    "fields": {
+      "first_name": "Michael",
+      "last_name": "Pineda",
+      "position": "SP",
+      "number": "35",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "68",
+    "fields": {
+      "first_name": "David",
+      "last_name": "Robertson",
+      "position": "RP",
+      "number": "30",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "69",
+    "fields": {
+      "first_name": "Esmil",
+      "last_name": "Rogers",
+      "position": "RP",
+      "number": "53",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "70",
+    "fields": {
+      "first_name": "Masahiro",
+      "last_name": "Tanaka",
+      "position": "SP",
+      "number": "19",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "71",
+    "fields": {
+      "first_name": "Adam",
+      "last_name": "Warren",
+      "position": "RP",
+      "number": "43",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "72",
+    "fields": {
+      "first_name": "Chase",
+      "last_name": "Whitley",
+      "position": "SP",
+      "number": "39",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "73",
+    "fields": {
+      "first_name": "Francisco",
+      "last_name": "Cervelli",
+      "position": "C",
+      "number": "29",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "74",
+    "fields": {
+      "first_name": "Brian",
+      "last_name": "McCann",
+      "position": "C",
+      "number": "34",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "75",
+    "fields": {
+      "first_name": "John",
+      "last_name": "Ryan Murphy",
+      "position": "C",
+      "number": "66",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "76",
+    "fields": {
+      "first_name": "Austin",
+      "last_name": "Romine",
+      "position": "C",
+      "number": "62",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "77",
+    "fields": {
+      "first_name": "Stephen",
+      "last_name": "Drew",
+      "position": "2B",
+      "number": "33",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "78",
+    "fields": {
+      "first_name": "Chase",
+      "last_name": "Headley",
+      "position": "3B",
+      "number": "12",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "79",
+    "fields": {
+      "first_name": "Derek",
+      "last_name": "Jeter",
+      "position": "SS",
+      "number": "2",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "80",
+    "fields": {
+      "first_name": "Jose",
+      "last_name": "Pirela",
+      "position": "SS",
+      "number": "67",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "81",
+    "fields": {
+      "first_name": "Brendan",
+      "last_name": "Ryan",
+      "position": "SS",
+      "number": "17",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "82",
+    "fields": {
+      "first_name": "Mark",
+      "last_name": "Teixeira",
+      "position": "1B",
+      "number": "25",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "83",
+    "fields": {
+      "first_name": "Zelous",
+      "last_name": "Wheeler",
+      "position": "3B",
+      "number": "45",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "84",
+    "fields": {
+      "first_name": "Jacoby",
+      "last_name": "Ellsbury",
+      "position": "CF",
+      "number": "22",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "85",
+    "fields": {
+      "first_name": "Brett",
+      "last_name": "Gardner",
+      "position": "LF",
+      "number": "11",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "86",
+    "fields": {
+      "first_name": "Eury",
+      "last_name": "Perez",
+      "position": "CF",
+      "number": "40",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "87",
+    "fields": {
+      "first_name": "Antoan",
+      "last_name": "Richardson",
+      "position": "CF",
+      "number": "63",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "88",
+    "fields": {
+      "first_name": "Ichiro",
+      "last_name": "Suzuki",
+      "position": "RF",
+      "number": "31",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "89",
+    "fields": {
+      "first_name": "Chris",
+      "last_name": "Young",
+      "position": "LF",
+      "number": "24",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "90",
+    "fields": {
+      "first_name": "Carlos",
+      "last_name": "Beltran",
+      "position": "DH",
+      "number": "36",
+      "team": "65"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "91",
+    "fields": {
+      "first_name": "Eli",
+      "last_name": "Manning",
+      "position": "QB",
+      "number": "10",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "92",
+    "fields": {
+      "first_name": "Ryan",
+      "last_name": "Nassib",
+      "position": "QB",
+      "number": "9",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "93",
+    "fields": {
+      "first_name": "Michael",
+      "last_name": "Cox",
+      "position": "RB",
+      "number": "29",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "94",
+    "fields": {
+      "first_name": "Peyton",
+      "last_name": "Hillis",
+      "position": "RB",
+      "number": "33",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "95",
+    "fields": {
+      "first_name": "Rashad",
+      "last_name": "Jennings",
+      "position": "RB",
+      "number": "23",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "96",
+    "fields": {
+      "first_name": "Andre",
+      "last_name": "Williams",
+      "position": "RB",
+      "number": "44",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "97",
+    "fields": {
+      "first_name": "David",
+      "last_name": "Wilson",
+      "position": "RB",
+      "number": "22",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "98",
+    "fields": {
+      "first_name": "Henry",
+      "last_name": "Hynoski",
+      "position": "FB",
+      "number": "45",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "99",
+    "fields": {
+      "first_name": "Odell",
+      "last_name": "Beckham Jr.",
+      "position": "WR",
+      "number": "13",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "100",
+    "fields": {
+      "first_name": "Victor",
+      "last_name": "Cruz",
+      "position": "WR",
+      "number": "80",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "101",
+    "fields": {
+      "first_name": "Marcus",
+      "last_name": "Harris",
+      "position": "WR",
+      "number": "18",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "102",
+    "fields": {
+      "first_name": "Jerrel",
+      "last_name": "Jernigan",
+      "position": "WR",
+      "number": "12",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "103",
+    "fields": {
+      "first_name": "Kevin",
+      "last_name": "Ogletree",
+      "position": "WR",
+      "number": "15",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "104",
+    "fields": {
+      "first_name": "Preston",
+      "last_name": "Parker",
+      "position": "WR",
+      "number": "83",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "105",
+    "fields": {
+      "first_name": "Rueben",
+      "last_name": "Randle",
+      "position": "WR",
+      "number": "82",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "106",
+    "fields": {
+      "first_name": "Corey",
+      "last_name": "Washington",
+      "position": "WR",
+      "number": "88",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "107",
+    "fields": {
+      "first_name": "Larry",
+      "last_name": "Donnell",
+      "position": "TE",
+      "number": "84",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "108",
+    "fields": {
+      "first_name": "Daniel",
+      "last_name": "Fells",
+      "position": "TE",
+      "number": "85",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "109",
+    "fields": {
+      "first_name": "Adrien",
+      "last_name": "Robinson",
+      "position": "TE",
+      "number": "81",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "110",
+    "fields": {
+      "first_name": "Zak",
+      "last_name": "DeOssie",
+      "position": "C",
+      "number": "51",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "111",
+    "fields": {
+      "first_name": "J.D.",
+      "last_name": "Walton",
+      "position": "C",
+      "number": "55",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "112",
+    "fields": {
+      "first_name": "Will",
+      "last_name": "Beatty",
+      "position": "OT",
+      "number": "65",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "113",
+    "fields": {
+      "first_name": "Charles",
+      "last_name": "Brown",
+      "position": "OT",
+      "number": "71",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "114",
+    "fields": {
+      "first_name": "Rogers",
+      "last_name": "Gaines",
+      "position": "OT",
+      "number": "79",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "115",
+    "fields": {
+      "first_name": "Troy",
+      "last_name": "Kropog",
+      "position": "OT",
+      "number": "70",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "116",
+    "fields": {
+      "first_name": "Justin",
+      "last_name": "Pugh",
+      "position": "OT",
+      "number": "67",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "117",
+    "fields": {
+      "first_name": "Adam",
+      "last_name": "Snyder",
+      "position": "OT",
+      "number": "68",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "118",
+    "fields": {
+      "first_name": "James",
+      "last_name": "Brewer",
+      "position": "OG",
+      "number": "73",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "119",
+    "fields": {
+      "first_name": "John",
+      "last_name": "Jerry",
+      "position": "OG",
+      "number": "77",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "120",
+    "fields": {
+      "first_name": "Brandon",
+      "last_name": "Mosley",
+      "position": "OG",
+      "number": "75",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "121",
+    "fields": {
+      "first_name": "Dallas",
+      "last_name": "Reynolds",
+      "position": "OG",
+      "number": "61",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "122",
+    "fields": {
+      "first_name": "Weston",
+      "last_name": "Richburg",
+      "position": "OG",
+      "number": "70",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "123",
+    "fields": {
+      "first_name": "Geoff",
+      "last_name": "Schwartz",
+      "position": "OG",
+      "number": "74",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "124",
+    "fields": {
+      "first_name": "Robert",
+      "last_name": "Ayers",
+      "position": "DE",
+      "number": "91",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "125",
+    "fields": {
+      "first_name": "Mathias",
+      "last_name": "Kiwanuka",
+      "position": "DE",
+      "number": "94",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "126",
+    "fields": {
+      "first_name": "Damontre",
+      "last_name": "Moore",
+      "position": "DE",
+      "number": "98",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "127",
+    "fields": {
+      "first_name": "Jason",
+      "last_name": "Pierre-Paul",
+      "position": "DE",
+      "number": "90",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "128",
+    "fields": {
+      "first_name": "Kerry",
+      "last_name": "Wynn",
+      "position": "DE",
+      "number": "72",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "129",
+    "fields": {
+      "first_name": "Jay",
+      "last_name": "Bromley",
+      "position": "DT",
+      "number": "96",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "130",
+    "fields": {
+      "first_name": "Johnathan",
+      "last_name": "Hankins",
+      "position": "DT",
+      "number": "95",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "131",
+    "fields": {
+      "first_name": "Cullen",
+      "last_name": "Jenkins",
+      "position": "DT",
+      "number": "99",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "132",
+    "fields": {
+      "first_name": "Markus",
+      "last_name": "Kuhn",
+      "position": "DT",
+      "number": "78",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "133",
+    "fields": {
+      "first_name": "Mike",
+      "last_name": "Patterson",
+      "position": "DT",
+      "number": "93",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "134",
+    "fields": {
+      "first_name": "Jon",
+      "last_name": "Beason",
+      "position": "LB",
+      "number": "52",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "135",
+    "fields": {
+      "first_name": "Mark",
+      "last_name": "Herzlich",
+      "position": "LB",
+      "number": "58",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "136",
+    "fields": {
+      "first_name": "Devon",
+      "last_name": "Kennard",
+      "position": "LB",
+      "number": "59",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "137",
+    "fields": {
+      "first_name": "Jameel",
+      "last_name": "McClain",
+      "position": "LB",
+      "number": "53",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "138",
+    "fields": {
+      "first_name": "Spencer",
+      "last_name": "Paysinger",
+      "position": "LB",
+      "number": "54",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "139",
+    "fields": {
+      "first_name": "Jacquian",
+      "last_name": "Williams",
+      "position": "LB",
+      "number": "57",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "140",
+    "fields": {
+      "first_name": "Prince",
+      "last_name": "Amukamara",
+      "position": "CB",
+      "number": "20",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "141",
+    "fields": {
+      "first_name": "Zack",
+      "last_name": "Bowman",
+      "position": "CB",
+      "number": "31",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "142",
+    "fields": {
+      "first_name": "Chandler",
+      "last_name": "Fenner",
+      "position": "CB",
+      "number": "48",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "143",
+    "fields": {
+      "first_name": "Jayron",
+      "last_name": "Hosley",
+      "position": "CB",
+      "number": "28",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "144",
+    "fields": {
+      "first_name": "Travis",
+      "last_name": "Howard",
+      "position": "CB",
+      "number": "48",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "145",
+    "fields": {
+      "first_name": "Trumaine",
+      "last_name": "McBride",
+      "position": "CB",
+      "number": "38",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "146",
+    "fields": {
+      "first_name": "Dominique",
+      "last_name": "Rodgers-Cromartie",
+      "position": "CB",
+      "number": "21",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "147",
+    "fields": {
+      "first_name": "Walter",
+      "last_name": "Thurmond III",
+      "position": "CB",
+      "number": "24",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "148",
+    "fields": {
+      "first_name": "Cooper",
+      "last_name": "Taylor",
+      "position": "S",
+      "number": "30",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "149",
+    "fields": {
+      "first_name": "Nat",
+      "last_name": "Berhe",
+      "position": "SS",
+      "number": "34",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "150",
+    "fields": {
+      "first_name": "Antrel",
+      "last_name": "Rolle",
+      "position": "SS",
+      "number": "26",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "151",
+    "fields": {
+      "first_name": "Stevie",
+      "last_name": "Brown",
+      "position": "FS",
+      "number": "27",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "152",
+    "fields": {
+      "first_name": "Quintin",
+      "last_name": "Demps",
+      "position": "FS",
+      "number": "35",
+      "team": "2"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "153",
+    "fields": {
+      "first_name": "Jack",
+      "last_name": "Crawford",
+      "position": "DE",
+      "number": "58",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "154",
+    "fields": {
+      "first_name": "Tyrone",
+      "last_name": "Crawford",
+      "position": "DE",
+      "number": "98",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "155",
+    "fields": {
+      "first_name": "Lavar",
+      "last_name": "Edwards",
+      "position": "DE",
+      "number": "95",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "156",
+    "fields": {
+      "first_name": "Ben",
+      "last_name": "Gardner",
+      "position": "DE",
+      "number": "71",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "157",
+    "fields": {
+      "first_name": "DeMarcus",
+      "last_name": "Lawrence",
+      "position": "DE",
+      "number": "90",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "158",
+    "fields": {
+      "first_name": "Jeremy",
+      "last_name": "Mincey",
+      "position": "DE",
+      "number": "92",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "159",
+    "fields": {
+      "first_name": "George",
+      "last_name": "Selvie",
+      "position": "DE",
+      "number": "99",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "160",
+    "fields": {
+      "first_name": "Anthony",
+      "last_name": "Spencer",
+      "position": "DE",
+      "number": "93",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "161",
+    "fields": {
+      "first_name": "Ken",
+      "last_name": "Bishop",
+      "position": "DT",
+      "number": "66",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "162",
+    "fields": {
+      "first_name": "Josh",
+      "last_name": "Brent",
+      "position": "DT",
+      "number": "--",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "163",
+    "fields": {
+      "first_name": "Davon",
+      "last_name": "Coleman",
+      "position": "DT",
+      "number": "60",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "164",
+    "fields": {
+      "first_name": "Nick",
+      "last_name": "Hayden",
+      "position": "DT",
+      "number": "96",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "165",
+    "fields": {
+      "first_name": "Terrell",
+      "last_name": "McClain",
+      "position": "DT",
+      "number": "97",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "166",
+    "fields": {
+      "first_name": "Henry",
+      "last_name": "Melton",
+      "position": "DT",
+      "number": "69",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "167",
+    "fields": {
+      "first_name": "Bruce",
+      "last_name": "Carter",
+      "position": "LB",
+      "number": "54",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "168",
+    "fields": {
+      "first_name": "Justin",
+      "last_name": "Durant",
+      "position": "LB",
+      "number": "52",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "169",
+    "fields": {
+      "first_name": "Anthony",
+      "last_name": "Hitchens",
+      "position": "LB",
+      "number": "59",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "170",
+    "fields": {
+      "first_name": "DeVonte",
+      "last_name": "Holloman",
+      "position": "LB",
+      "number": "57",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "171",
+    "fields": {
+      "first_name": "Cameron",
+      "last_name": "Lawrence",
+      "position": "LB",
+      "number": "53",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "172",
+    "fields": {
+      "first_name": "Sean",
+      "last_name": "Lee",
+      "position": "LB",
+      "number": "50",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "173",
+    "fields": {
+      "first_name": "Rolando",
+      "last_name": "McClain",
+      "position": "LB",
+      "number": "55",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "174",
+    "fields": {
+      "first_name": "Korey",
+      "last_name": "Toomer",
+      "position": "LB",
+      "number": "56",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "175",
+    "fields": {
+      "first_name": "Kyle",
+      "last_name": "Wilber",
+      "position": "LB",
+      "number": "51",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "176",
+    "fields": {
+      "first_name": "Brandon",
+      "last_name": "Carr",
+      "position": "CB",
+      "number": "39",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "177",
+    "fields": {
+      "first_name": "Morris",
+      "last_name": "Claiborne",
+      "position": "CB",
+      "number": "24",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "178",
+    "fields": {
+      "first_name": "Orlando",
+      "last_name": "Scandrick",
+      "position": "CB",
+      "number": "32",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "179",
+    "fields": {
+      "first_name": "Jakar",
+      "last_name": "Hamilton",
+      "position": "DB",
+      "number": "23",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "180",
+    "fields": {
+      "first_name": "Sterling",
+      "last_name": "Moore",
+      "position": "DB",
+      "number": "26",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "181",
+    "fields": {
+      "first_name": "Tyler",
+      "last_name": "Patmon",
+      "position": "DB",
+      "number": "20",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "182",
+    "fields": {
+      "first_name": "C.J.",
+      "last_name": "Spillman",
+      "position": "DB",
+      "number": "37",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "183",
+    "fields": {
+      "first_name": "Jeff",
+      "last_name": "Heath",
+      "position": "SS",
+      "number": "38",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "184",
+    "fields": {
+      "first_name": "J.J.",
+      "last_name": "Wilcox",
+      "position": "SS",
+      "number": "27",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "185",
+    "fields": {
+      "first_name": "Barry",
+      "last_name": "Church",
+      "position": "FS",
+      "number": "42",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "186",
+    "fields": {
+      "first_name": "Tony",
+      "last_name": "Romo",
+      "position": "QB",
+      "number": "9",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "187",
+    "fields": {
+      "first_name": "Dustin",
+      "last_name": "Vaughan",
+      "position": "QB",
+      "number": "10",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "188",
+    "fields": {
+      "first_name": "Brandon",
+      "last_name": "Weeden",
+      "position": "QB",
+      "number": "3",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "189",
+    "fields": {
+      "first_name": "Lance",
+      "last_name": "Dunbar",
+      "position": "RB",
+      "number": "25",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "190",
+    "fields": {
+      "first_name": "DeMarco",
+      "last_name": "Murray",
+      "position": "RB",
+      "number": "29",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "191",
+    "fields": {
+      "first_name": "Joseph",
+      "last_name": "Randle",
+      "position": "RB",
+      "number": "21",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "192",
+    "fields": {
+      "first_name": "Tyler",
+      "last_name": "Clutts",
+      "position": "FB",
+      "number": "44",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "193",
+    "fields": {
+      "first_name": "Cole",
+      "last_name": "Beasley",
+      "position": "WR",
+      "number": "11",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "194",
+    "fields": {
+      "first_name": "Dez",
+      "last_name": "Bryant",
+      "position": "WR",
+      "number": "88",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "195",
+    "fields": {
+      "first_name": "Dwayne",
+      "last_name": "Harris",
+      "position": "WR",
+      "number": "17",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "196",
+    "fields": {
+      "first_name": "Devin",
+      "last_name": "Street",
+      "position": "WR",
+      "number": "15",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "197",
+    "fields": {
+      "first_name": "Terrance",
+      "last_name": "Williams",
+      "position": "WR",
+      "number": "83",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "198",
+    "fields": {
+      "first_name": "Gavin",
+      "last_name": "Escobar",
+      "position": "TE",
+      "number": "89",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "199",
+    "fields": {
+      "first_name": "James",
+      "last_name": "Hanna",
+      "position": "TE",
+      "number": "84",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "200",
+    "fields": {
+      "first_name": "Jordan",
+      "last_name": "Najvar",
+      "position": "TE",
+      "number": "87",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "201",
+    "fields": {
+      "first_name": "Jason",
+      "last_name": "Witten",
+      "position": "TE",
+      "number": "82",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "202",
+    "fields": {
+      "first_name": "Travis",
+      "last_name": "Frederick",
+      "position": "C",
+      "number": "72",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "203",
+    "fields": {
+      "first_name": "L.P.",
+      "last_name": "Ladouceur",
+      "position": "C",
+      "number": "91",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "204",
+    "fields": {
+      "first_name": "Doug",
+      "last_name": "Free",
+      "position": "OT",
+      "number": "68",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "205",
+    "fields": {
+      "first_name": "Donald",
+      "last_name": "Hawkins",
+      "position": "OT",
+      "number": "71",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "206",
+    "fields": {
+      "first_name": "Tony",
+      "last_name": "Hills",
+      "position": "OT",
+      "number": "--",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "207",
+    "fields": {
+      "first_name": "Jermey",
+      "last_name": "Parnell",
+      "position": "OT",
+      "number": "78",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "208",
+    "fields": {
+      "first_name": "Tyron",
+      "last_name": "Smith",
+      "position": "OT",
+      "number": "77",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "209",
+    "fields": {
+      "first_name": "Darrion",
+      "last_name": "Weems",
+      "position": "OT",
+      "number": "75",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "210",
+    "fields": {
+      "first_name": "Mackenzy",
+      "last_name": "Bernadeau",
+      "position": "OG",
+      "number": "73",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "211",
+    "fields": {
+      "first_name": "Ronald",
+      "last_name": "Leary",
+      "position": "OG",
+      "number": "65",
+      "team": "1"
+    }
+  },
+  {
+    "model": "athletes.athlete",
+    "pk": "212",
+    "fields": {
+      "first_name": "Zack",
+      "last_name": "Martin",
+      "position": "OG",
+      "number": "70",
+      "team": "1"
+    }
+  }
+]
