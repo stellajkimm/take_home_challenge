@@ -23,7 +23,7 @@
               <li><a href="{% url 'sport_list' sport.id %}">{{ sport }}</a></li>
             {% endfor %}
             <li class="divider"></li>
-            <li><a href="#">Add Sport</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#sport_create">Add Sport</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -34,7 +34,7 @@
               <li><a href="{% url 'league_list' sport.id league.id %}">{{ league }}</a></li>
             {% endfor %}
             <li class="divider"></li>
-            <li><a href="#">Add League</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#league_create">Add League</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -45,7 +45,7 @@
               <li><a href="{% url 'division_list' sport.id league.id division.id %}">{{ division }}</a></li>
             {% endfor %}
             <li class="divider"></li>
-            <li><a href="#">Add Division</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#division_create">Add Division</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -58,7 +58,7 @@
               {% endfor %}
             {% endif %}
             <li class="divider"></li>
-            <li><a href="#">Add Team</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#team_create">Add Team</a></li>
           </ul>
         </li>
       </ul>
