@@ -82,13 +82,15 @@ a.link {
     font-size: 1.4em;
 }
 
+.navbar {
+    opacity: .85;
+}
+
 .table_athletes {
     border-radius: .5;
     margin-top: 20px;
-    opacity: .5;
-    background-color: #223522;
+    background:rgba(27, 43, 27,0.5);
     border-collapse: separate;
-    border: solid #114411 1px;
     border-radius: 10px;
     z-index: -100;
 }
