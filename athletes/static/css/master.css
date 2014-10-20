@@ -26,9 +26,6 @@ body {
     /*background-color: #5B5950;*/
 }
 
-form table {
-    text-align: left;
-}
 h1 {
     text-align: center;
 }
@@ -42,11 +39,19 @@ tr:nth-child(even).not(.table_form) {
     background-color: #e7e7e7;
 }
 
+ul.errorlist {
+    display:none;
+}
+
 .container {
     width: 80%;
 }
 
+.filler {
+
+}
+
 .table_form tbody tr {
     height: 30px;
+    text-align: left;
 }
-ul.errorlist {display:none;}
