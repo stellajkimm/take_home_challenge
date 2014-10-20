@@ -62,12 +62,12 @@ def team_list(request, sport_id, league_id, division_id, team_id):
 	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams, 'team': team, 'create_athlete_form': create_athlete_form})
 
 def athlete_delete(request, athlete_id):
-	template_name='athletes/athlete_confirm_delete.html'
+	# template_name='athletes/athlete_confirm_delete.html'
 	athlete = get_object_or_404(Athlete, pk=athlete_id)
 	if request.method=='POST':
 			athlete.delete()
 			return redirect('index')
-	return render(request, template_name, {'athlete':athlete})
+	return render(request, 'athletes/index.html', {'athlete':athlete})
 
 # def get_name(request):
 #     # if this is a POST request we need to process the form data
