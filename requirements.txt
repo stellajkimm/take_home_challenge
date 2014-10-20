@@ -25,7 +25,6 @@ python-dateutil==1.5
 pytz==2012d
 queuelib==1.2.2
 requests==2.4.3
-scipy==0.11.0
 six==1.8.0
 static3==0.5.1
 stevedore==1.0.0
