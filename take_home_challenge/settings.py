@@ -95,9 +95,6 @@ USE_TZ = True
 #     '/var/www/static/',
 # )
 
-# Template Settings
-
-TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
@@ -118,3 +115,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+# Template Settings
+
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
