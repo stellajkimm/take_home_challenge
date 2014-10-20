@@ -61,40 +61,23 @@ def team_list(request, sport_id, league_id, division_id, team_id):
 	create_athlete_form.fields['team'] = forms.ModelChoiceField(teams)
 	return render(request, 'athletes/index.html', {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'division': division, 'teams': teams, 'team': team, 'create_athlete_form': create_athlete_form})
 
+def athlete_create(request):
+	create_athlete_form = AthleteForm(request.POST)
+	if create_athlete_form.is_valid():
+			create_athlete_form.save()
+			return redirect('index')
+	return render(request, 'athletes/index.html')
+
 def athlete_delete(request, athlete_id):
-	# template_name='athletes/athlete_confirm_delete.html'
 	athlete = get_object_or_404(Athlete, pk=athlete_id)
 	if request.method=='POST':
 			athlete.delete()
 			return redirect('index')
-	return render(request, 'athletes/index.html', {'athlete':athlete})
+	return render(request, 'athletes/index.html')
 
-# def get_name(request):
-#     # if this is a POST request we need to process the form data
-#     if request.method == 'POST':
-#         # create a form instance and populate it with data from the request:
-#         create_athlete_form = AthleteForm(request.POST)
-#         # check whether it's valid:
-#         if form.is_valid():
-#             # process the data in form.cleaned_data as required
-#             # ...
-#             # redirect to a new URL:
-#             return HttpResponseRedirect('/thanks/')
 
-#     # if a GET (or any other method) we'll create a blank form
-#     else:
-#         form = NameForm()
-
-#     return render(request, 'name.html', {'form': form})
-
-class AthleteForm(forms.Form):
-    first_name = forms.CharField(label='First Name', max_length=100)
-    last_name = forms.CharField(label='Last Name', max_length=100)
-    position = forms.CharField(label='Position', max_length=100)
-    number = forms.CharField(label='Number', max_length=100)
-
+class AthleteForm(forms.ModelForm):
     class Meta:
-        # Provide an association between the ModelForm and a model
         model = Athlete
         fields = ('first_name', 'last_name', 'position', 'number', 'team')
 
