@@ -13,6 +13,16 @@ import dj_database_url
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+import sys
+LOGGING = {
+    'handlers': {
+        'console':{
+            'level':'INFO',
+            'class':'logging.StreamHandler',
+            'stream': sys.stdout
+        },
+    }
+}
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -24,9 +34,6 @@ SECRET_KEY = 'p+sxv+)96wpnzstex-vk+w^e_3!jdemiilr(v-e75l20ts1%b^'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
-
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -61,12 +68,11 @@ WSGI_APPLICATION = 'take_home_challenge.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['localhost', 'http://dry-savannah-6646.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
 
 if not os.environ.has_key('DATABASE_URL'):
     os.environ['DATABASE_URL'] = 'postgres://stellajkimm:password@localhost/thuziodb'
