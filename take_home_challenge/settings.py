@@ -66,7 +66,7 @@ WSGI_APPLICATION = 'take_home_challenge.wsgi.application'
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', 'http://dry-savannah-6646.herokuapp.com/']
 
 if not os.environ.has_key('DATABASE_URL'):
     os.environ['DATABASE_URL'] = 'postgres://stellajkimm:password@localhost/thuziodb'
