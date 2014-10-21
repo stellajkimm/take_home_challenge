@@ -68,17 +68,6 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'thuziodb',
-#         'USER': 'stellajkimm',
-#         'PASSWORD': 'password',
-#         'HOST': '',
-#         'PORT': '5432',
-#     }
-# }
-
 if not os.environ.has_key('DATABASE_URL'):
     os.environ['DATABASE_URL'] = 'postgres://stellajkimm:password@localhost/thuziodb'
 
@@ -101,11 +90,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
+    # '/var/www/static/',
 )
 
 # Template Settings
