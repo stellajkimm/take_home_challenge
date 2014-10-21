@@ -1,1 +1,1 @@
-web: gunicorn athletes.wsgi
+web: gunicorn take_home_challenge.wsgi
