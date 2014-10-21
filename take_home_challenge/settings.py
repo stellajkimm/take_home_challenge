@@ -8,6 +8,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
+import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -36,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'django_extensions',
+    'django_extensions',
     'bootstrap3',
     'jquery',
     'athletes',
@@ -60,16 +61,24 @@ WSGI_APPLICATION = 'take_home_challenge.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'thuziodb',
-#         'USER': 'stellajkimm',
-#         'PASSWORD': 'password',
-#         'HOST': '',
-#         'PORT': '5432',
-#     }
-# }
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'thuziodb',
+        'USER': 'stellajkimm',
+        'PASSWORD': 'password',
+        'HOST': '',
+        'PORT': '5432',
+    }
+}
+DATABASES['default'] =  dj_database_url.config()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
@@ -98,12 +107,3 @@ STATICFILES_DIRS = (
 # Template Settings
 
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
-
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
-
-# Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-# Allow all host headers
-ALLOWED_HOSTS = ['*']
