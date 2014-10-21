@@ -38,11 +38,11 @@ class Team(models.Model):
 
 class Athlete(models.Model):
     team = models.ForeignKey(Team)
-    first_name = models.CharField(max_length=200)
-    last_name = models.CharField(max_length=200)
-    position = models.CharField(max_length=200)
-    status = models.CharField(max_length=200)
-    number = models.CharField(max_length=200)
+    first_name = models.CharField(max_length=200, blank=True)
+    last_name = models.CharField(max_length=200, blank=True)
+    position = models.CharField(max_length=200, blank=True)
+    status = models.CharField(max_length=200, blank=True)
+    number = models.CharField(max_length=200, blank=True)
 
     def __str__(self):
         return '%s %s' % (self.first_name, self.last_name)

@@ -3,6 +3,7 @@ from django.core.urlresolvers import reverse
 from django.views import generic
 from django import forms
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from urlparse import urlparse
 
 from athletes.models import Sport, League, Division, Team, Athlete
 
@@ -19,7 +20,7 @@ def sport_list(request, sport_id):
 	sport = get_object_or_404(Sport, pk=sport_id)
 	sports = Sport.objects.order_by('name')
 	leagues = sport.league_set.order_by('name')
-	teams = Team.objects.order_by('name')
+	teams = Team.objects.filter(division__league__sport=sport).order_by('name')
 	athletes = Athlete.objects.filter(team__division__league__sport=sport).order_by('last_name')
 	athlete_form = AthleteForm(request.POST)
 	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
@@ -64,24 +65,28 @@ def team_list(request, team_id):
 
 def athlete_create(request):
 	athlete_form = AthleteForm(request.POST)
+	referer = urlparse(request.META.get('HTTP_REFERER')).path
+	print referer
 	if athlete_form.is_valid():
 		athlete_form.save()
-		return redirect('index')
+		return redirect(referer)
 	return render(request, 'athletes/index.html')
 
 def athlete_edit(request, athlete_id):
     athlete = get_object_or_404(Athlete, pk=athlete_id)
+    referer = urlparse(request.META.get('HTTP_REFERER')).path
     edit_athlete_form = AthleteForm(request.POST, instance=athlete)
     if edit_athlete_form.is_valid():
         edit_athlete_form.save()
-        return redirect('index')
+        return redirect(referer)
     return render(request, 'athletes/index.html')
 
 def athlete_delete(request, athlete_id):
 	athlete = get_object_or_404(Athlete, pk=athlete_id)
+	referer = urlparse(request.META.get('HTTP_REFERER')).path
 	if request.method=='POST':
 		athlete.delete()
-		return redirect('index')
+		return redirect(referer)
 	return render(request, 'athletes/index.html')
 
 def sport_create(request):
