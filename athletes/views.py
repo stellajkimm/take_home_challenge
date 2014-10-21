@@ -2,15 +2,16 @@ from django.shortcuts import get_object_or_404, render, redirect
 from django.core.urlresolvers import reverse
 from django.views import generic
 from django import forms
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from athletes.models import Sport, League, Division, Team, Athlete
 
 def index(request):
 	sports = Sport.objects.order_by('name')
-	athletes = Athlete.objects.order_by('last_name')
 	teams = Team.objects.order_by('name')
 	athlete_form = AthleteForm(request.POST)
 	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
+	athletes = Athlete.objects.order_by('last_name')
 	data = {'sports': sports, 'athletes': athletes, 'teams': teams, 'athlete_form': athlete_form}
 	return render(request, 'athletes/index.html', data)
 
@@ -57,7 +58,7 @@ def team_list(request, team_id):
 	teams = team.division.team_set.order_by('name')
 	athletes = Athlete.objects.filter(team=team).order_by('last_name')
 	athlete_form = AthleteForm(request.POST)
-	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
+	athlete_form.fields['team'] = forms.ModelChoiceField(Team.objects.filter(id=team_id))
 	data = {'sport': team.division.league.sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': team.division.league, 'divisions': divisions, 'division': team.division, 'teams': teams, 'team': team, 'athlete_form': athlete_form}
 	return render(request, 'athletes/index.html', data)
 
