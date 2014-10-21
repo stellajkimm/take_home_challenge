@@ -68,17 +68,21 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'thuziodb',
-        'USER': 'stellajkimm',
-        'PASSWORD': 'password',
-        'HOST': '',
-        'PORT': '5432',
-    }
-}
-DATABASES['default'] =  dj_database_url.config()
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'thuziodb',
+#         'USER': 'stellajkimm',
+#         'PASSWORD': 'password',
+#         'HOST': '',
+#         'PORT': '5432',
+#     }
+# }
+
+if not os.environ.has_key('DATABASE_URL'):
+    os.environ['DATABASE_URL'] = 'postgres://stellajkimm:password@localhost/thuziodb'
+
+DATABASES = {'default': dj_database_url.config(default=os.environ['DATABASE_URL'])}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
