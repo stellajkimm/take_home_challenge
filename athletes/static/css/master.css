@@ -61,9 +61,24 @@ ul.errorlist {
     z-index: -100;
 }
 
+input {
+    background-color: #464646;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #464646;
+}
+
+input:focus {
+    outline: 5px auto #222522;
+}
+
 input#filter {
     background-color: #464646;
     color: white;
+}
+
+input#filter:focus {
+    outline: 5px auto #222522;
 }
 
 a.link {
@@ -78,7 +93,7 @@ a.link {
 }
 
 .modal-content {
-    background-color: #223522;
+    background-color: #222522;
     font-size: 0.9em;
 }
 
@@ -86,6 +101,13 @@ a.link {
   min-height: 16.42857143px;
   padding: 15px;
   border-bottom: 1px solid #464646;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+  outline: 5px auto #222522;
 }
 
 .sel {
