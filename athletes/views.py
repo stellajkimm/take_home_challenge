@@ -19,7 +19,7 @@ def sport_list(request, sport_id):
 	sport = get_object_or_404(Sport, pk=sport_id)
 	sports = Sport.objects.order_by('name')
 	leagues = sport.league_set.order_by('name')
-	teams = Team.objects.order_by('name')
+	teams = Team.objects.filter(division__league__sport=sport).order_by('name')
 	athletes = Athlete.objects.filter(team__division__league__sport=sport).order_by('last_name')
 	athlete_form = AthleteForm(request.POST)
 	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
