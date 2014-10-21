@@ -58,7 +58,7 @@ def team_list(request, team_id):
 	teams = team.division.team_set.order_by('name')
 	athletes = Athlete.objects.filter(team=team).order_by('last_name')
 	athlete_form = AthleteForm(request.POST)
-	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
+	athlete_form.fields['team'] = forms.ModelChoiceField(Team.objects.filter(id=team_id))
 	data = {'sport': team.division.league.sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': team.division.league, 'divisions': divisions, 'division': team.division, 'teams': teams, 'team': team, 'athlete_form': athlete_form}
 	return render(request, 'athletes/index.html', data)
 
