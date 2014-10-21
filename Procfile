@@ -1,1 +1,1 @@
-web: gunicorn athletes.wsgi --log-file -
+web: gunicorn athletes.wsgi
