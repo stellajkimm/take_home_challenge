@@ -6,12 +6,18 @@ class Sport(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        ordering = ['name']
+
 class League(models.Model):
     sport = models.ForeignKey(Sport)
     name = models.CharField(max_length=200)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['name']
 
 class Division(models.Model):
     league = models.ForeignKey(League)
@@ -22,6 +28,9 @@ class Division(models.Model):
 
     def sport(self):
         return self.league.sport
+
+    class Meta:
+        ordering = ['name']
 
 class Team(models.Model):
     division = models.ForeignKey(Division)
@@ -36,6 +45,9 @@ class Team(models.Model):
     def sport(self):
         return self.division.league.sport
 
+    class Meta:
+        ordering = ['name']
+
 class Athlete(models.Model):
     team = models.ForeignKey(Team)
     first_name = models.CharField(max_length=200, blank=True)
@@ -46,3 +58,6 @@ class Athlete(models.Model):
 
     def __str__(self):
         return '%s %s' % (self.first_name, self.last_name)
+
+    class Meta:
+        ordering = ['last_name']

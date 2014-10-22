@@ -11,8 +11,8 @@ def index(request):
 	"""
 	main view that lists all athletes
 	"""
-	sports = Sport.objects.order_by('name')
-	teams = Team.objects.order_by('name')
+	sports = Sport.objects.all()
+	teams = Team.objects.all()
 	athlete_form = AthleteForm(request.POST)
 	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
 	athletes = Athlete.objects.order_by('last_name')
@@ -24,10 +24,10 @@ def sport_list(request, sport_id):
 	lists all athletes within a specific sport using sport_id
 	"""
 	sport = get_object_or_404(Sport, pk=sport_id)
-	sports = Sport.objects.order_by('name')
-	leagues = sport.league_set.order_by('name')
-	teams = Team.objects.filter(division__league__sport=sport).order_by('name')
-	athletes = Athlete.objects.filter(team__division__league__sport=sport).order_by('last_name')
+	sports = Sport.objects.all()
+	leagues = sport.league_set.all()
+	teams = Team.objects.filter(division__league__sport=sport)
+	athletes = Athlete.objects.filter(team__division__league__sport=sport)
 	athlete_form = AthleteForm(request.POST)
 	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
 	data = {'sport': sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'teams': teams, 'athlete_form': athlete_form}
@@ -38,11 +38,11 @@ def league_list(request, league_id):
 	lists all athletes within a specific league using league_id
 	"""
 	league = get_object_or_404(League, pk=league_id)
-	sports = Sport.objects.order_by('name')
-	leagues = league.sport.league_set.order_by('name')
-	divisions = league.division_set.order_by('name')
-	teams = Team.objects.filter(division__league=league).order_by('name')
-	athletes = Athlete.objects.filter(team__division__league=league).order_by('last_name')
+	sports = Sport.objects.all()
+	leagues = league.sport.league_set.all()
+	divisions = league.division_set.all()
+	teams = Team.objects.filter(division__league=league)
+	athletes = Athlete.objects.filter(team__division__league=league)
 	athlete_form = AthleteForm(request.POST)
 	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
 	data = {'sport': league.sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': league, 'divisions': divisions, 'teams': teams, 'athlete_form': athlete_form}
@@ -53,11 +53,11 @@ def division_list(request, division_id):
 	lists all athletes within a specific division using division_id
 	"""
 	division = get_object_or_404(Division, pk=division_id)
-	sports = Sport.objects.order_by('name')
-	leagues = division.league.sport.league_set.order_by('name')
-	divisions = division.league.division_set.order_by('name')
-	teams = division.team_set.order_by('name')
-	athletes = Athlete.objects.filter(team__division=division).order_by('last_name')
+	sports = Sport.objects.all()
+	leagues = division.league.sport.league_set.all()
+	divisions = division.league.division_set.all()
+	teams = division.team_set.all()
+	athletes = Athlete.objects.filter(team__division=division)
 	athlete_form = AthleteForm(request.POST)
 	athlete_form.fields['team'] = forms.ModelChoiceField(teams)
 	data = {'sport': division.league.sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': division.league, 'divisions': divisions, 'division': division, 'teams': teams, 'athlete_form': athlete_form}
@@ -68,11 +68,11 @@ def team_list(request, team_id):
 	lists all athletes within a specific team using team_id
 	"""
 	team = get_object_or_404(Team, pk=team_id)
-	sports = Sport.objects.order_by('name')
-	leagues = team.division.league.sport.league_set.order_by('name')
-	divisions = team.division.league.division_set.order_by('name')
-	teams = team.division.team_set.order_by('name')
-	athletes = Athlete.objects.filter(team=team).order_by('last_name')
+	sports = Sport.objects.all()
+	leagues = team.division.league.sport.league_set.all()
+	divisions = team.division.league.division_set.all()
+	teams = team.division.team_set.all()
+	athletes = Athlete.objects.filter(team=team)
 	athlete_form = AthleteForm(request.POST)
 	athlete_form.fields['team'] = forms.ModelChoiceField(Team.objects.filter(id=team_id))
 	data = {'sport': team.division.league.sport, 'sports': sports, 'athletes': athletes, 'leagues': leagues, 'league': team.division.league, 'divisions': divisions, 'division': team.division, 'teams': teams, 'team': team, 'athlete_form': athlete_form}
