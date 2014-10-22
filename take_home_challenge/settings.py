@@ -1,5 +1,5 @@
 """
-Django settings for hellodjango project.
+Django settings for take-home project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -19,7 +19,7 @@ import dj_database_url
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'p+sxv+)96wpnzstex-vk+w^e_3!jdemiilr(v-e75l20ts1%b^'
+SECRET_KEY = '-x^ur_tjj%ezsd&#z%9f=i-jbssjr8%%knfx!us1!p3(hgfga^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -27,6 +27,7 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
+
 
 # Application definition
 
@@ -40,7 +41,7 @@ INSTALLED_APPS = (
     'django_extensions',
     'bootstrap3',
     'jquery',
-    'athletes',
+    'athletes'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -53,21 +54,14 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'take_home_challenge.urls'
+ROOT_URLCONF = 'take-home.urls'
 
-WSGI_APPLICATION = 'take_home_challenge.wsgi.application'
+WSGI_APPLICATION = 'take-home.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-# Allow all host headers
-# ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
-
-# if not os.environ.has_key('DATABASE_URL'):
-#     os.environ['DATABASE_URL'] = 'postgres://stellajkimm:password@localhost/thuziodb'
-
-# DATABASES = {'default': dj_database_url.config(default=os.environ['DATABASE_URL'])}
 DATABASES = {
     'default': {
      'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -79,8 +73,10 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] =  dj_database_url.config()
+if not os.environ.has_key('DATABASE_URL'):
+    os.environ['DATABASE_URL'] = 'postgres://stellajkimm:password@localhost/thuziodb'
 
+DATABASES['default'] =  dj_database_url.config()
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
@@ -95,6 +91,10 @@ USE_L10N = True
 USE_TZ = True
 
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.7/howto/static-files/
+
+# STATIC_URL = '/static/'
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -102,17 +102,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.7/howto/static-files/
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'take_home_challenge/static')
-# STATIC_URL = '/static/'
-
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, "athletes/static"),
-#     # '/var/www/static/',
-# )
-
+# Static asset configuration
+# import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
@@ -120,7 +111,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
-# Template Settings
 
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]

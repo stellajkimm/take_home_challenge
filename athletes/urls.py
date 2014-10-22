@@ -1,9 +1,9 @@
 from django.conf.urls import patterns, url
 from athletes import views
 
-urlpatterns = patterns('athletes.views',
-	
-    url(r'^$', 'index', name='index'),
+urlpatterns = patterns('athletes',
+    
+    url (r'^$', views.index, name='index'),
 
     url (r'^sports/(?P<sport_id>[0-9]+)/$', views.sport_list, name='sport_list'),
     url (r'^sports/create/$', views.sport_create, name='sport_create'),
@@ -21,5 +21,4 @@ urlpatterns = patterns('athletes.views',
     url (r'^athletes/edit/(?P<athlete_id>\d+)/$', views.athlete_edit, name='athlete_edit'),
     url (r'^athletes/delete/(?P<athlete_id>\d+)/$', views.athlete_delete, name='athlete_delete'),
 
-    
 )

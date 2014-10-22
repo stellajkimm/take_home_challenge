@@ -1,1 +1,1 @@
-web: gunicorn take_home_challenge.wsgi
+web: gunicorn take-home.wsgi --log-file -
