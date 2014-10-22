@@ -70,16 +70,16 @@ WSGI_APPLICATION = 'take_home_challenge.wsgi.application'
 # DATABASES = {'default': dj_database_url.config(default=os.environ['DATABASE_URL'])}
 DATABASES = {
     'default': {
-    #  'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #  'NAME': 'thuziodb',
-    #  'USER': 'stellajkimm',
-    #  'PASSWORD': 'password',
-    #  'HOST': '127.0.0.1',
-    #  'PORT': '5432',
+     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+     'NAME': 'thuziodb',
+     'USER': 'stellajkimm',
+     'PASSWORD': 'password',
+     'HOST': '127.0.0.1',
+     'PORT': '5432',
     }
 }
 
-DATABASES['default'] =  dj_database_url.config(default='postgres://localhost')
+DATABASES['default'] =  dj_database_url.config()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
