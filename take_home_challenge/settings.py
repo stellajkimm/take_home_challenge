@@ -1,5 +1,5 @@
 """
-Django settings for take-home project.
+Django settings for take_home_challenge project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -54,9 +54,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'take-home.urls'
+ROOT_URLCONF = 'take_home_challenge.urls'
 
-WSGI_APPLICATION = 'take-home.wsgi.application'
+WSGI_APPLICATION = 'take_home_challenge.wsgi.application'
 
 
 # Database
