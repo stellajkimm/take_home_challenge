@@ -64,22 +64,22 @@ WSGI_APPLICATION = 'take_home_challenge.wsgi.application'
 # Allow all host headers
 # ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
 
-if not os.environ.has_key('DATABASE_URL'):
-    os.environ['DATABASE_URL'] = 'postgres://stellajkimm:password@localhost/thuziodb'
+# if not os.environ.has_key('DATABASE_URL'):
+#     os.environ['DATABASE_URL'] = 'postgres://stellajkimm:password@localhost/thuziodb'
 
 # DATABASES = {'default': dj_database_url.config(default=os.environ['DATABASE_URL'])}
 DATABASES = {
     'default': {
-     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-     'NAME': 'thuziodb',
-     'USER': 'stellajkimm',
-     'PASSWORD': 'password',
-     'HOST': '127.0.0.1',
-     'PORT': '5432',
+    #  'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #  'NAME': 'thuziodb',
+    #  'USER': 'stellajkimm',
+    #  'PASSWORD': 'password',
+    #  'HOST': '127.0.0.1',
+    #  'PORT': '5432',
     }
 }
 
-DATABASES['default'] =  dj_database_url.config()
+DATABASES['default'] =  dj_database_url.config(default='postgres://localhost')
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
