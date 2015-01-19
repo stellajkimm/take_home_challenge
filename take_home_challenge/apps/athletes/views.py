@@ -5,7 +5,7 @@ from django import forms
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from urlparse import urlparse
 
-from athletes.models import Sport, League, Division, Team, Athlete
+from take_home_challenge.apps.athletes.models import Sport, League, Division, Team, Athlete
 
 def index(request):
 	"""

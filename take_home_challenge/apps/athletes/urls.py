@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, url
-from athletes import views
+from take_home_challenge.apps.athletes import views
 
-urlpatterns = patterns('thuziodotcom.apps.talent.views',
+urlpatterns = patterns('take_home_challenge.apps.athletes.views',
     
     url (r'^$', views.index, name='index'),
 

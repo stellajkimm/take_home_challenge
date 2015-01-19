@@ -41,7 +41,7 @@ INSTALLED_APPS = (
     'django_extensions',
     'bootstrap3',
     'jquery',
-    'athletes'
+    'take_home_challenge.apps.athletes'
 )
 
 MIDDLEWARE_CLASSES = (

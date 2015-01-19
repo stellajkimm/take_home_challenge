@@ -1,5 +1,5 @@
 from django.contrib import admin
-from athletes.models import Sport, League, Division, Team, Athlete
+from take_home_challenge.apps.athletes.models import Sport, League, Division, Team, Athlete
 
 class AthleteAdmin(admin.ModelAdmin):
 	list_display = ('__str__', 'team', 'position', 'number', 'status')
