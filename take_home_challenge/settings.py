@@ -63,20 +63,24 @@ WSGI_APPLICATION = 'take_home_challenge.wsgi.application'
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #  'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #  'NAME': 'thuziodb',
+    #  'USER': 'stellajkimm',
+    #  'PASSWORD': 'password',
+    #  'HOST': '127.0.0.1',
+    #  'PORT': '5432',
+    # }
     'default': {
-     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-     'NAME': 'thuziodb',
-     'USER': 'stellajkimm',
-     'PASSWORD': 'password',
-     'HOST': '127.0.0.1',
-     'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'thuzio.db'),
     }
 }
 
-if not os.environ.has_key('DATABASE_URL'):
-    os.environ['DATABASE_URL'] = 'postgres://stellajkimm:password@localhost/thuziodb'
+# if not os.environ.has_key('DATABASE_URL'):
+#     os.environ['DATABASE_URL'] = 'postgres://stellajkimm:password@localhost/thuziodb'
 
-DATABASES['default'] =  dj_database_url.config()
+# DATABASES['default'] =  dj_database_url.config()
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
@@ -107,6 +111,9 @@ ALLOWED_HOSTS = ['*']
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = 'mediafiles'
+MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),

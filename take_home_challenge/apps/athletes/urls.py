@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, url
 from athletes import views
 
-urlpatterns = patterns('athletes',
+urlpatterns = patterns('thuziodotcom.apps.talent.views',
     
     url (r'^$', views.index, name='index'),
 
