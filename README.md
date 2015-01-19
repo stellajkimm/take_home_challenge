@@ -8,6 +8,8 @@ INSTALLATION
 cd take-home-challenge/
 pip install -r requirements.txt
 python manage.py migrate
+python manage.py loaddata initial_data.json
+python manage.py loaddata cowboys.json
 python manage.py runserver
 </code></pre>
 
